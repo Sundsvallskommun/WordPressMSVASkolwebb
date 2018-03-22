@@ -7,12 +7,6 @@ if ( ! is_front_page() && ! is_search() && ! is_archive() && ! is_home() ) {
 ?>
 
 <?php
-// if this is advanced template we use its footer column, else we use them options settings.
-wp_reset_query();
-$fields_id = is_advanced_template_child() ? advanced_template_top_ancestor() : 'option';
-?>
-
-<?php
 
 /**
  * We serve site footer from saved transient to prevent a lot of meta queries
@@ -20,55 +14,69 @@ $fields_id = is_advanced_template_child() ? advanced_template_top_ancestor() : '
  */
 //			$cached_footer = get_transient( "site_footer_$fields_id" );
 
-if ( $cached_footer ):
-	echo $cached_footer;
-else:
+//if ( $cached_footer ):
+//	echo $cached_footer;
+//else:
 
-	ob_start();
+ob_start();
 
-	?>
+?>
 
-	<footer class="site-footer">
+<footer class="site-footer">
+	<div class="footer-background">
 
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 site-footer__upper">
-					<?php get_template_part( 'partials/main-menu' ); ?>
-				</div>
-				<!-- /.col-sm-12 -->
+	</div>
+	<!-- /.footer-background -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 site-footer__upper">
+				<?php get_template_part( 'partials/main-menu' ); ?>
 			</div>
-			<!-- /.row -->
-			<div class="row site-footer__below">
-				<div class="col-sm-6 ">
-					<?php $has_logo = function_exists( 'the_custom_logo' ) && has_custom_logo(); ?>
-					<div class="logo-container no-margin no-padding <?php echo $has_logo ? 'haslogo' : '' ?>">
-						<?php the_custom_logo(); ?>
-					</div>
-				</div>
-				<!-- /.col-sm-6 -->
-				<div class="col-sm-6">
-					<div class="rounded-iframe">
-						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhimlabadet&tabs=timeline&width=340&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=260510397707106" width="340" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
-					<!-- /.rounded-iframe -->
-				</div>
-				<!-- /.col-sm 6 -->
-			</div>
-			<!-- /.row -->
+			<!-- /.col-sm-12 -->
 		</div>
-		<!-- /.container -->
+		<!-- /.row -->
+		<div class="row site-footer__below">
+			<aside class="col-sm-12 col-md-6">
+				<div class="row">
+					<div class="col-md-12 col-md-6">
+						<?php $has_logo = function_exists( 'the_custom_logo' ) && has_custom_logo(); ?>
+						<div class="logo-container no-margin no-padding <?php echo $has_logo ? 'haslogo' : '' ?>">
+							<?php the_custom_logo(); ?>
+						</div>
+					</div>
+					<!-- /.col-md-12 -->
+				</div><!-- /.row -->
+				<div class="row">
+					<div class="col-md-12">
+						<?php get_footer_links(); ?>
+					</div>
+					<!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+			</aside>
+			<!-- /.col-sm-6 -->
+			<aside class="col-sm-12 col-md-6">
+				<div class="rounded-iframe col-sm-12 no-padding">
+					<?php the_shortcode_field( 'footer_content', 'options' ); ?>
+				</div>
+				<!-- /.rounded-iframe -->
+			</aside>
+			<!-- /.col-sm 6 -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
 
-	</footer>
+</footer>
 
-	<?php
+<?php
 
-	$footer = ob_get_clean();
+$footer = ob_get_clean();
 
-	//				set_transient( "site_footer_$fields_id", $footer, HOUR_IN_SECONDS );
+//				set_transient( "site_footer_$fields_id", $footer, HOUR_IN_SECONDS );
 
-	echo $footer;
+echo $footer;
 
-endif;
+//endif;
 
 ?>
 

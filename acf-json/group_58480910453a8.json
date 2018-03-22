@@ -4,10 +4,10 @@
     "fields": [
         {
             "key": "field_58480920d58f2",
-            "label": "Dela p\u00e5 sociala medier",
+          "label": "Dela på sociala medier",
             "name": "sk_share_activated",
             "type": "checkbox",
-            "instructions": "Om aktiverad ges m\u00f6jlighet att v\u00e4lja om en sida eller inl\u00e4gg (i samband med redigering) ska kunna delas p\u00e5 sociala medier.",
+          "instructions": "Om aktiverad ges möjlighet att välja om en sida eller inlägg (i samband med redigering) ska kunna delas på sociala medier.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -16,7 +16,7 @@
                 "id": ""
             },
             "choices": {
-                "1": "Ja, aktivera dela p\u00e5 sociala medier"
+              "1": "Ja, aktivera dela på sociala medier"
             },
             "default_value": [],
             "layout": "vertical",
@@ -27,7 +27,7 @@
         },
         {
             "key": "field_585a51acc3675",
-            "label": "Markerad som f\u00f6rvald",
+          "label": "Markerad som förvald",
             "name": "sk_share_checked",
             "type": "checkbox",
             "instructions": "",
@@ -39,7 +39,7 @@
                 "id": ""
             },
             "choices": {
-                "1": "Ja, anv\u00e4nd f\u00f6rvald markering."
+              "1": "Ja, använd förvald markering."
             },
             "default_value": [],
             "layout": "vertical",
@@ -66,5 +66,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1488491221
+  "modified": 1497428895
 }

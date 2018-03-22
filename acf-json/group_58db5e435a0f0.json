@@ -1,0 +1,69 @@
+{
+  "key": "group_58db5e435a0f0",
+  "title": "Färg och ikoner navigationssida",
+  "fields": [
+    {
+      "key": "field_58db5e78f9e4e",
+      "label": "Ikon (material icon)",
+      "name": "navtemplate_material_icon",
+      "type": "text",
+      "instructions": "Ikonnamn från <a href=\"https:\/\/design.google.com\/icons\/\">\r\nGoogle Material Icons\r\n<\/a>",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_58db60b0f9e4f",
+      "label": "Färgtema",
+      "name": "navtemplate_color",
+      "type": "select",
+      "instructions": "Frägtema på ikoner och navigationskort.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "choices": {
+        "orange": "Orange",
+        "blue": "Blå",
+        "green": "Grön"
+      },
+      "default_value": [],
+      "allow_null": 1,
+      "multiple": 0,
+      "ui": 0,
+      "ajax": 0,
+      "return_format": "value",
+      "placeholder": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "templates\/page-navigation.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": 1,
+  "description": "",
+  "modified": 1497428282
+}

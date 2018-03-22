@@ -1,0 +1,43 @@
+{
+  "key": "group_58caa7a3b3d1e",
+  "title": "Himlabadet anläggning",
+  "fields": [
+    {
+      "key": "field_58caa7b1c91cb",
+      "label": "Extra information",
+      "name": "location_extra_information",
+      "type": "textarea",
+      "instructions": "Extra information angående anläggningen exempelvis mindre avvikelser eller eventuella informationer",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 2,
+      "new_lines": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "event_location"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "field",
+  "hide_on_screen": "",
+  "active": 1,
+  "description": "",
+  "modified": 1497428416
+}

@@ -1,0 +1,288 @@
+{
+  "key": "group_58c150af745cb",
+  "title": "Huvudblock",
+  "fields": [
+    {
+      "key": "field_58c1524a90eb9",
+      "label": "Huvudblock",
+      "name": "header_content",
+      "type": "flexible_content",
+      "instructions": "Inställningar rörande de block som ska visas i sidhuvudet",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": "http:\/\/himlabadet.dev\/wp\/wp-admin\/post.php?post=212&action=edit#"
+      },
+      "button_label": "Lägg till block",
+      "min": 0,
+      "max": 2,
+      "layouts": [
+        {
+          "key": "58e3a94fb5f5d",
+          "name": "the_title_and_content",
+          "label": "Sidinformation (titel och text)",
+          "display": "block",
+          "sub_fields": [],
+          "min": "",
+          "max": ""
+        },
+        {
+          "key": "58c15198e112a",
+          "name": "title_with_text",
+          "label": "Rubrik med text",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_58c155b990ebe",
+              "label": "Rubrik",
+              "name": "title",
+              "type": "text",
+              "instructions": "",
+              "required": 1,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_58c155c790ebf",
+              "label": "Text",
+              "name": "text",
+              "type": "wysiwyg",
+              "instructions": "Vänligen använd endast paragrafer",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "tabs": "all",
+              "toolbar": "sundsvalls_kommun",
+              "media_upload": 0,
+              "delay": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        {
+          "key": "58c1561ba2425",
+          "name": "large_title_with_caption",
+          "label": "Rubrik med liten överrubrik",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_58c156d5a2426",
+              "label": "överrubrik (mindre)",
+              "name": "caption",
+              "type": "text",
+              "instructions": "Överrubrik, en aningen mindre text ovanför rubriken",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_58c156daa2427",
+              "label": "Rubrik",
+              "name": "title",
+              "type": "text",
+              "instructions": "",
+              "required": 1,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        {
+          "key": "58c1570da2428",
+          "name": "shortcode",
+          "label": "Kortkod",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_58c15712a2429",
+              "label": "Shortcode",
+              "name": "shortcode",
+              "type": "textarea",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "placeholder": "",
+              "maxlength": "",
+              "rows": "",
+              "new_lines": ""
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        {
+          "key": "58c15752a242a",
+          "name": "card",
+          "label": "Informationskort (med bakgrund)",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_58c15770a242b",
+              "label": "Rubrik",
+              "name": "title",
+              "type": "text",
+              "instructions": "",
+              "required": 1,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_58c15841a242c",
+              "label": "Text",
+              "name": "text",
+              "type": "textarea",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "placeholder": "",
+              "maxlength": "",
+              "rows": "",
+              "new_lines": "wpautop"
+            },
+            {
+              "key": "field_58c15853a242d",
+              "label": "Knapp",
+              "name": "button",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": [
+                "field_58b8930dca5e9"
+              ],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        {
+          "key": "58c15ae6a242e",
+          "name": "news",
+          "label": "Senaste nyheter",
+          "display": "block",
+          "sub_fields": [],
+          "min": "",
+          "max": ""
+        }
+      ]
+    },
+    {
+      "key": "field_58c152f890ebc",
+      "label": "Bakgrundsfärg",
+      "name": "header_background_color",
+      "type": "radio",
+      "instructions": "Ifall det finns en utvald bild blir detta en övertoning på den bilden",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "choices": {
+        "default": "Svart",
+        "blue": "Blå",
+        "orange": "Orange",
+        "green": "Grön"
+      },
+      "allow_null": 0,
+      "other_choice": 0,
+      "save_other_choice": 0,
+      "default_value": "",
+      "layout": "vertical",
+      "return_format": "value"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "templates\/page-start-advanced.php"
+      }
+    ],
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "templates\/page-navigation.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": 1,
+  "description": "",
+  "modified": 1497428424
+}

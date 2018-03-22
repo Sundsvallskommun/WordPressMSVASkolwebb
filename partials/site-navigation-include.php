@@ -1,14 +1,15 @@
 <div class="navbar">
+	
 	<div class="navbar__menu">
 		<?php get_template_part( 'partials/main-menu' ); ?>
 	</div>
-	<! -- /.navbar__menu -->
-	<div class="navbar__translate">
-		<?php get_template_part( 'partials/google-translate.php' ); ?>
-	</div>
-	<!-- /.navbar__translate -->
+
+	<?php do_action( 'hb_before_navbar_search' ); ?>
+
 	<div class="navbar__search-form">
 		<?php get_search_form( true ); ?>
 	</div>
 	<!-- /.navbar__searchform -->
+	<?php do_action( 'hb_after_navbar_search' ); ?>
+
 </div>

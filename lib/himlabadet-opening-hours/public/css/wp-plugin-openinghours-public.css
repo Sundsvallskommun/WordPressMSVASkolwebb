@@ -1,0 +1,183 @@
+.opening-hours-wrapper {
+    background: #f7f7f7;
+    position: relative;
+}
+
+.opening-hours-wrapper .list-group {
+    background: #f7f7f7;
+    padding-top: 1em;
+}
+
+.opening-hours-wrapper .list-group-item {
+    background: #f7f7f7;
+    border: none;
+    color: #3d3d3d;
+    padding: 0.25em 2.25em;
+}
+
+.opening-hours-wrapper .list-group-item p {
+    color: #3d3d3d;
+}
+
+.opening-hours-wrapper .list-group-item .icon {
+    padding-top: 10px;
+}
+
+.card.opening-hours-wrapper .opening-hours-widget .location-information. span.phone,
+.opening-hours-widget .list-group-item div .phone {
+    font-weight: normal !important;
+}
+
+.opening-hours-widget .list-group-item a,
+.opening-hours-widget .list-group-item a:visited {
+    color: #3d3d3d;
+}
+
+.opening-hours-wrapper .location-information .closed {
+    text-transform: uppercase;
+}
+
+.opening-hours-wrapper .location-information p {
+    margin-bottom: 0;
+    margin-top: -5px;
+}
+
+.opening-hours-wrapper .header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #3d3d3d;
+    margin-top: 10px;
+}
+
+.opening-hours-wrapper .opening-hours-header {
+    background-color: #eee;
+    padding: 0.75rem 1.25rem;
+}
+
+.opening-hours-wrapper .opening-hours-header .arrow {
+    cursor: pointer;
+    color: #3d3d3d;
+    margin-top: 10px;
+}
+
+.opening-hours-wrapper .header p {
+    padding: 0;
+    margin: 0;
+    color: #3d3d3d;
+}
+
+.opening-hours-wrapper .header .title {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+.opening-hours-wrapper .header .date {
+    cursor: pointer;
+    margin-top: -5px;
+    font-size: 1.3em;
+}
+
+.opening-hours-wrapper .header .date .icon {
+    padding-top: 15px;
+}
+
+.opening-hours-wrapper .header .date .material-icons {
+    font-size: 90%;
+    margin-left: 5px;
+}
+
+.opening-hours-wrapper .current-location,
+.opening-hours-wrapper .current-date {
+    display: none;
+}
+
+.datepicker-wrapper {
+    width: 200px;
+    margin: auto;
+}
+
+#opening-hours-datepicker {
+    display: none;
+}
+
+.datepicker {
+    width: 200px;
+    margin-left: 30px;
+}
+
+.opening-hours-wrapper .list-group-item .location-information {
+
+    padding-left: 2.5em;
+}
+
+.opening-hours-wrapper .opening-hours-footer {
+    background: #f7f7f7;
+    border: none;
+    color: #3d3d3d;
+    padding: 0.75em .5em 0.75em 2.5em;
+    font-size: 0.9em;
+
+}
+
+.opening-hours-wrapper .opening-hours-footer a,
+.opening-hours-wrapper .opening-hours-footer a:visited {
+    color: #3d3d3d;
+}
+
+.opening-hours-wrapper .opening-hours-footer a:hover {
+    text-decoration: underline;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/ajax-loader.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    z-index: 999;
+}
+
+.opening-hours-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.opening-hours-nav ul li {
+    float: left;
+    color: #3d3d3d;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.opening-hours-nav .nav-title {
+    width: 80%;
+    text-align: center;
+}
+
+.opening-hours-nav .nav-left {
+    width: 10%;
+    cursor: pointer;
+}
+
+.opening-hours-nav .nav-right {
+    width: 10%;
+    text-align: right;
+    cursor: pointer;
+}
+
+.opening-hours-nav .nav-right .icon {
+    margin-left: auto;
+}
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.699999988">
+        <g id="Kalender" transform="translate(-323.000000, -39.000000)" fill="#004B93">
+            <g id="Pencil" transform="translate(323.000000, 39.000000)">
+                <path d="M12.75,0 L1.9921875,10.7578125 L0,17 L6.2421875,15.0078125 L17,4.25 C17,4.25 16.9291667,2.7625 15.5833333,1.41666667 C14.2375,0.0708333333 12.75,0 12.75,0 Z M2.76692708,11.4661458 C2.76692708,11.4661458 3.62135417,11.6786458 4.47135417,12.5286458 C5.3921875,13.3786458 5.53385417,14.1666667 5.53385417,14.1666667 L5.55598958,14.2109375 L3.03255208,15.0078125 L1.97005208,13.9453125 L2.76692708,11.4661458 Z"
+                      id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

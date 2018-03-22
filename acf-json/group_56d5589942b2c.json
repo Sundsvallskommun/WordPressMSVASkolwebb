@@ -48,6 +48,13 @@
                 "operator": "==",
                 "value": "templates\/page-start-simple.php"
             }
+        ],
+      [
+        {
+          "param": "page_template",
+          "operator": "==",
+          "value": "templates\/page-navigation.php"
+        }
         ]
     ],
     "menu_order": 0,
@@ -58,5 +65,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1488372382
+  "modified": 1497428902
 }

@@ -1,0 +1,62 @@
+{
+  "key": "group_58bd5edc216c0",
+  "title": "Facebook widget",
+  "fields": [
+    {
+      "key": "field_58bd60eac6dcc",
+      "label": "Kod till facebook widget",
+      "name": "hb_facebook_widget",
+      "type": "textarea",
+      "instructions": "Används med shortcoden [facebook-widget]",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": "",
+      "new_lines": ""
+    },
+    {
+      "key": "field_58e4ad663e5e0",
+      "label": "Facebook appId",
+      "name": "hb_facebook_app_id",
+      "type": "text",
+      "instructions": "App id till facebook, kontakta ansvarig för facebook för att få ett idnummer",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "options_page",
+        "operator": "==",
+        "value": "acf-options-himlabadet"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": 1,
+  "description": "",
+  "modified": 1497428252
+}

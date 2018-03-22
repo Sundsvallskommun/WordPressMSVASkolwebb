@@ -1,0 +1,85 @@
+{
+  "key": "group_59070a07906a5",
+  "title": "Toppvideo",
+  "fields": [
+    {
+      "key": "field_59070a27c19c6",
+      "label": "Använd video",
+      "name": "topvideo_active",
+      "type": "true_false",
+      "instructions": "Klicka i denna om ni vill använda video istället för bakgrundsbild, använder sig av Toppbild som \"poster\" vilket är bilden innan videon har laddat korrekt.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "message": "",
+      "default_value": 0,
+      "ui": 0,
+      "ui_on_text": "",
+      "ui_off_text": ""
+    },
+    {
+      "key": "field_59070a83c19c7",
+      "label": "Extern video",
+      "name": "topvideo_external_url",
+      "type": "url",
+      "instructions": "URL till Extern mp4 fil",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "http:\/\/abcdefg.com\/enfilm.mp4"
+    },
+    {
+      "key": "field_59070ac2c19c8",
+      "label": "Intern video",
+      "name": "topvideo_internal_url",
+      "type": "file",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "url",
+      "library": "all",
+      "min_size": "",
+      "max_size": "",
+      "mime_types": "mp4"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "templates\/page-start-advanced.php"
+      }
+    ],
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "templates\/page-navigation.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": 1,
+  "description": "",
+  "modified": 1497428906
+}

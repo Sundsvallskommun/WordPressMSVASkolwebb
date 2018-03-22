@@ -1,0 +1,43 @@
+{
+  "key": "group_5836b514bb8a8",
+  "title": "Driftmeddelanden",
+  "fields": [
+    {
+      "key": "field_5836b666efdc1",
+      "label": "Aktivera driftmeddelanden",
+      "name": "use_service_messages",
+      "type": "true_false",
+      "instructions": "Om denna är inaktiv går det varken att skapa nya eller se driftmeddelanden.",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "message": "Använd driftmeddelanden",
+      "default_value": 1,
+      "ui": 0,
+      "ui_on_text": "",
+      "ui_off_text": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "options_page",
+        "operator": "==",
+        "value": "acf-options-allmant"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": 0,
+  "description": "Inställningar för posttypen driftmeddelanden. Ligger under webbplatsinställningar.",
+  "modified": 1497428712
+}

@@ -1,13 +1,13 @@
 {
     "key": "group_58b892ea72d16",
-    "title": "L\u00e4nkgrupper",
+  "title": "Länkgrupper",
     "fields": [
         {
             "key": "field_58b8930dca5e9",
-            "label": "L\u00e4nkgrupp",
+          "label": "Länkgrupp",
             "name": "hb_link_group",
             "type": "repeater",
-            "instructions": "L\u00e4nkar \/ knappar i grupp",
+          "instructions": "Länkar \/ knappar i grupp",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -19,11 +19,11 @@
             "min": 0,
             "max": 0,
             "layout": "row",
-            "button_label": "L\u00e4gg till l\u00e4nk",
+          "button_label": "Lägg till länk",
             "sub_fields": [
                 {
                     "key": "field_58b893baca5eb",
-                    "label": "Typ av l\u00e4nk",
+                  "label": "Typ av länk",
                     "name": "link_type",
                     "type": "radio",
                     "instructions": "",
@@ -48,26 +48,80 @@
                     "return_format": "value"
                 },
                 {
+                  "key": "field_58d27dc576e5c",
+                  "label": "Använda Google Materialize ikoner?",
+                  "name": "link_use_materialize",
+                  "type": "true_false",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "message": "",
+                  "default_value": 1,
+                  "ui": 0,
+                  "ui_on_text": "",
+                  "ui_off_text": ""
+                },
+              {
+                "key": "field_58d27fdef4ef3",
+                "label": "Materialize ikon",
+                "name": "link_materialize_ikon",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                  [
+                    {
+                      "field": "field_58d27dc576e5c",
+                      "operator": "==",
+                      "value": "1"
+                    }
+                  ]
+                ],
+                "wrapper": {
+                  "width": "",
+                  "class": "",
+                  "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+              },
+              {
                     "key": "field_58b89339ca5ea",
                     "label": "Ikon",
                     "name": "link_icon",
                     "type": "select",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                "conditional_logic": [
+                  [
+                    {
+                      "field": "field_58d27dc576e5c",
+                      "operator": "!=",
+                      "value": "1"
+                    }
+                  ]
+                ],
                     "wrapper": {
                         "width": "",
                         "class": "",
                         "id": ""
                     },
                     "choices": {
-                        "marker": "Kartn\u00e5l",
-                        "phone": "Telefon",
-                        "mailoutline": "Brev \/ mail",
+                      "marker": "Kartnål",
+                      "telephone": "Telefon",
+                      "mail": "Brev \/ mail",
                         "facebook": "Facebook"
                     },
                     "default_value": [],
-                    "allow_null": 0,
+                "allow_null": 1,
                     "multiple": 0,
                     "ui": 0,
                     "ajax": 0,
@@ -76,7 +130,7 @@
                 },
                 {
                     "key": "field_58b919d8ca5f1",
-                    "label": "L\u00e4nktext",
+                  "label": "Länktext",
                     "name": "link_title",
                     "type": "text",
                     "instructions": "",
@@ -95,7 +149,7 @@
                 },
                 {
                     "key": "field_58b8942cca5ec",
-                    "label": "Intern l\u00e4nk",
+                  "label": "Intern länk",
                     "name": "link_internal",
                     "type": "page_link",
                     "instructions": "",
@@ -122,7 +176,7 @@
                 },
                 {
                     "key": "field_58b894a3ca5ed",
-                    "label": "Extern l\u00e4nk",
+                  "label": "Extern länk",
                     "name": "link_external",
                     "type": "url",
                     "instructions": "",
@@ -200,7 +254,7 @@
                 },
                 {
                     "key": "field_58b91974ca5f0",
-                    "label": "\u00d6ppna i nytt f\u00f6nster",
+                  "label": "Öppna i nytt fönster",
                     "name": "link_new_window",
                     "type": "true_false",
                     "instructions": "",
@@ -235,7 +289,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+  "active": 0,
     "description": "",
-    "modified": 1488527323
+  "modified": 1497428700
 }

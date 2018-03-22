@@ -1,0 +1,195 @@
+{
+  "key": "group_5852fc9d8ad05",
+  "title": "Block - länklista",
+  "fields": [
+    {
+      "key": "field_5853174ebcfa3",
+      "label": "Rubrik för blocket",
+      "name": "sk_block_link_list_title",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_5852fdba44da6",
+      "label": "Länkgrupp",
+      "name": "sk_block_link_list",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "row",
+      "button_label": "Lägg till länkgrupp",
+      "sub_fields": [
+        {
+          "key": "field_5852fdcd44da7",
+          "label": "Rubrik",
+          "name": "rubrik",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_5852fe7b44daa",
+          "label": "Länk",
+          "name": "link",
+          "type": "flexible_content",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "button_label": "Lägg till länk",
+          "min": "",
+          "max": "",
+          "layouts": [
+            {
+              "key": "5852fe8821a8b",
+              "name": "internal-link",
+              "label": "Intern länk",
+              "display": "row",
+              "sub_fields": [
+                {
+                  "key": "field_5853006cc65d4",
+                  "label": "Länktitel",
+                  "name": "linklist_title",
+                  "type": "text",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "placeholder": "",
+                  "prepend": "",
+                  "append": "",
+                  "maxlength": ""
+                },
+                {
+                  "key": "field_5852fe9744dab",
+                  "label": "Intern länk",
+                  "name": "linklist_url",
+                  "type": "page_link",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "post_type": [],
+                  "taxonomy": [],
+                  "allow_null": 0,
+                  "allow_archives": 1,
+                  "multiple": 0
+                }
+              ],
+              "min": "",
+              "max": ""
+            },
+            {
+              "key": "5852ffda66fb8",
+              "name": "external-link",
+              "label": "Extern länk",
+              "display": "row",
+              "sub_fields": [
+                {
+                  "key": "field_5852fff766fb9",
+                  "label": "Länktitel",
+                  "name": "linklist_title",
+                  "type": "text",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "placeholder": "",
+                  "prepend": "",
+                  "append": "",
+                  "maxlength": ""
+                },
+                {
+                  "key": "field_5853001066fba",
+                  "label": "Extern länk",
+                  "name": "linklist_url",
+                  "type": "url",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "default_value": "",
+                  "placeholder": ""
+                }
+              ],
+              "min": "",
+              "max": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_taxonomy",
+        "operator": "==",
+        "value": "block-type:lanklista"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": 1,
+  "description": "",
+  "modified": 1497428208
+}
