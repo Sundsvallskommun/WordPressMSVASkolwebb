@@ -1,0 +1,58 @@
+///**
+//  This is just a file of shame
+// */
+//
+//body {
+//  font-family: $font-family-base;
+//}
+//
+//.site-header {
+//  font-family: $font-family-base;
+//}
+//
+//h1, h2, h3, h4, h5, h6,
+//.h1, .h2, .h3, .h4, .h5, .h6 {
+//  margin-bottom: $headings-margin-bottom;
+//  font-family: $headings-font-family;
+//  font-weight: $headings-font-weight;
+//  line-height: $headings-line-height;
+//  color: $headings-color;
+//}
+//
+//a {
+//  color: $link-color;
+//}
+//
+
+/**
+Should be moved
+ */
+
+/** Tivoli reset **/
+.mobile-header {
+  border: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100vw;
+  overflow-x: hidden;
+
+  height: 5000px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.rounded-iframe {
+  transform: translateZ(0px);
+  border-radius: $border-radius;
+  display: inline-block;
+  overflow: hidden;
+}

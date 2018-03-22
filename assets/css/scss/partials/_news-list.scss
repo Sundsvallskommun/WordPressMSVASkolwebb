@@ -1,0 +1,32 @@
+.news-list {
+  //padding: 0.75rem;
+
+  .news-item{
+	font-size: $font-size-sm;
+  }
+
+}
+
+.news-item {
+  &__title {
+	font-size: 1em;
+	font-weight: bold;
+  }
+  &__link {
+	color: white;
+	display: block;
+	font-weight: bold;
+	&:hover, &:active, &:focus {
+	  color: inherit;
+	}
+  }
+
+  &__excerpt {
+	flex: 1 1 auto;
+	margin: 0;
+	line-height: 1.35;
+  }
+  &__content {
+
+  }
+}

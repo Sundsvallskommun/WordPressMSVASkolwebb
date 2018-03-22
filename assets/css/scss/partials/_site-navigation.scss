@@ -1,0 +1,75 @@
+$navbar-height: 7rem;
+
+.site-header {
+  font-family: $font-family-base;
+
+}
+
+@media (min-width: 768px) {
+
+  .hm-navigation {
+	position: relative;
+	z-index: 50;
+	height: $navbar-height / 2;
+  }
+
+  .navbar {
+	height: $navbar-height;
+	position: absolute;
+	top: - ($navbar-height + 1.25rem) / 2;
+	background-color: white;
+	display: flex;
+	flex-flow: row nowrap;
+	border-radius: 15px;
+	padding: 0 2.5rem;
+
+	&__menu {
+	  flex: 1 1 auto;
+	}
+	&__translate {
+	  flex: 1 0 auto;
+	  display: none;
+	}
+
+	&__search-form {
+	  flex: 0 1 auto;
+	  width: 25%;
+	}
+
+	& > * {
+	  display: flex;
+	  flex-flow: row nowrap;
+	  align-items: center;
+	}
+
+  }
+
+  .menu-container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+  }
+
+  .menu-item {
+	padding: ($input-padding-y-lg * 0.75) $input-padding-x-lg;
+	margin: 0 .5rem;
+	border-radius: $border-radius-lg;
+	a {
+	  font-weight: 800;
+	  color: hb-color(blue, 3);
+	}
+
+	&:first-of-type {
+	  margin-left: 0;
+	}
+
+	&.current-menu-item {
+	  background-color: hb-color(blue, 3);
+	  a {
+		color: white;
+	  }
+	}
+  }
+
+}

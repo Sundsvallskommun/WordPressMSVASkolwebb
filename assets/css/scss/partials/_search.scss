@@ -1,0 +1,172 @@
+
+.search-modules-row {
+  margin-top: 5.5rem;
+  margin-bottom: 5.5rem;
+  margin: 0;
+}
+
+.search-module {
+  margin-bottom: 4em;
+  border-bottom: $hr-border-width solid $hr-border-color;
+  border-right: $hr-border-width solid $hr-border-color;
+  background: #fff;
+
+  &__header {
+	padding: 2em $spacer-x*2 0;
+	@include media-breakpoint-up(md) {
+	  padding: 2em 4em 0;
+	}
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+
+  &__title {
+	margin: 0;
+	font-size: 1.25rem;
+  }
+
+  .post-count {
+	font-size: 0.875em;
+  }
+
+  &__items {
+	list-style: none;
+
+	padding: 0 $spacer-x*2;
+	@include media-breakpoint-up(md) {
+	  padding: 0 4em;
+	}
+  }
+
+  &__item {
+	line-height: 1.25;
+
+	a {
+	  padding: 1em $spacer-x;
+	  color: inherit;
+	  transition: background-color .1s ease-in-out;
+	  &:hover {
+		text-decoration: none;
+		background-color: hb-color(blue, 1);
+	  }
+	}
+
+	&.search-module__item + .search-module__item {
+	  border-top: $hr-border-width solid $hr-border-color;
+	}
+
+	&__container {
+	  display: flex;
+	  flex-flow: row nowrap;
+	  padding: 1em 0;
+	  overflow: auto;
+	  align-items: center;
+	}
+
+	&__title {
+	  margin: 0;
+	  font-size: $font-size-sm;
+	  font-family: inherit;
+	  font-weight: bold;
+	  color: hb-color(blue, 3);
+	  display: inline-block;
+	  max-width: 75%;
+	  text-overflow: ellipsis;
+	  word-break: break-all;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  flex: 1 1 auto;
+	}
+
+	&__description {
+	  align-self: flex-end;
+	  display: inline-block;
+	  flex: 1 1 auto;
+	  text-align: right;
+	  text-transform: uppercase;
+	  font-size: 0.625rem;
+	  color: $gray;
+	  font-weight: bold;
+	}
+
+  }
+
+  &__footer {
+	display: none;
+	a {
+	  display: block;
+	  background: white;
+	  text-align: center;
+	  padding: 1em;
+	  color: hb-color(blue, 3);
+	  font-weight: bolder;
+	  &:hover {
+		background: mix(hb-color(blue, 3), white, 15);
+	  }
+	}
+  }
+}
+
+.tt-menu {
+  @include media-breakpoint-down(sm) {
+	overflow: scroll !important;
+	max-height: calc(100vh - 150px) !important;
+  }
+
+  box-shadow: 0 11px 34px 0 rgba(0, 0, 0, 0.20);
+
+  background: #fff;
+  top: 150% !important;
+  width: 100%;
+  border: none;
+  padding: $spacer-y * 3 0 0;
+  //padding: $spacer-y $spacer-x*2;
+  border-radius: $border-radius;
+
+  .tt-loadmore {
+	margin-top: $spacer-y;
+  }
+
+  &:before {
+	content: 'Sökordsförslag';
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: auto;
+	bottom: auto;
+	right: auto;
+	padding: 1em $spacer-x 1em;
+	color: $gray;
+	font-size: 0.75rem;
+  }
+}
+
+.tt-input {
+  border-radius: $border-radius 0 0 $border-radius !important;
+}
+
+.tt-heading {
+  display: none;
+}
+
+.tt-suggestion {
+  list-style: none;
+  padding: 0;
+}
+
+.tt-dataset + .tt-dataset {
+}
+
+.tt-dataset a {
+}
+
+.tt-hint {
+  color: $text-muted !important;
+}
+
+.tt-cursor {
+}
+
+
+

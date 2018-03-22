@@ -1,0 +1,24 @@
+.card-title {
+
+}
+
+h5.card-title {
+  text-transform: uppercase;
+  line-height: 1.16;
+  letter-spacing: 1.28px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.card-block {
+  padding: 1.5rem;
+
+  &--small-y-padding {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+  }
+
+  &--extra-padding {
+	padding: 2.75rem;
+  }
+}

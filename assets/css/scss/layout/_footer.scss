@@ -1,0 +1,14 @@
+.site-footer {
+  background-color: white;
+
+  &__upper {
+	padding: 3rem 0;
+  }
+
+  .menu-item a {
+	text-decoration: none;
+	&:hover {
+	  text-decoration: underline;
+	}
+  }
+}

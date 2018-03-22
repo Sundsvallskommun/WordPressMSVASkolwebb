@@ -1,0 +1,49 @@
+.header-content {
+  color: white;
+
+  width: 100%;
+  flex: 1 1 auto;
+  position: relative;
+  z-index: 10;
+  padding: 6rem 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  &__aside {
+	display: flex;
+	flex: 1 1 auto;
+	flex-flow: column wrap;
+	justify-content: center;
+
+	&:only-child {
+	  justify-content: flex-end;
+	}
+  }
+
+}
+
+/**
+	Components
+ */
+
+.header-content {
+
+  &__pre-title {
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	line-height: 1.44;
+	font-weight: 400;
+	letter-spacing: 2px;
+  }
+  &__large-title {
+	font-size: 4.5rem;
+	font-weight: bold;
+  }
+
+  &__card {
+	background: rgba(#0A2036, .4);
+	padding-bottom: 1.5rem;
+	border: none;
+  }
+}

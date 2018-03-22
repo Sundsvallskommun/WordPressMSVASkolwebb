@@ -1,0 +1,43 @@
+.himlabadet-header {
+  background-color: transparent;
+  position: relative;
+  min-height: 80vh;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+
+  &__inner-container {
+	position: relative;
+	width: 100%;
+	padding: 2rem 0; // 2.5
+
+	background-color: transparent;
+	background-image: url('../images/header.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+
+	&:before, &:after {
+	  @include overlay();
+	  background-color: white;
+	  z-index: -1;
+	  left: -95%;
+	}
+
+	&:after {
+	  left: auto;
+	  right: -95%;
+	}
+
+  }
+
+  & .background-image {
+	z-index: -1;
+  }
+
+  .logo-container {
+	max-width: 17.625rem; // + ~1rem padding each side
+  }
+
+}
