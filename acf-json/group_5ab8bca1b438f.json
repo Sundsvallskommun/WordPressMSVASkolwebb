@@ -1,0 +1,45 @@
+{
+    "key": "group_5ab8bca1b438f",
+    "title": "Po\u00e4ngs\u00e4ttning - green coin",
+    "fields": [
+        {
+            "key": "field_5ab8bc0f573ec",
+            "label": "Po\u00e4ng",
+            "name": "gc_challenge_value",
+            "type": "number",
+            "instructions": "Hur m\u00e5nga green coins \u00e4r det v\u00e4rt n\u00e4r en person klarar en utmaning?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1000,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "challenge"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1522065864
+}

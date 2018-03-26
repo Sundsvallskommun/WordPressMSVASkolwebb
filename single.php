@@ -34,6 +34,13 @@
 						<?php the_content(); ?>
 						<div class="clearfix"></div>
 					</div>
+
+					<?php if (get_post_type() === 'challenge') : ?>
+                        <div class="card-block">
+                            <?php Green_Coin_Calc::output_calculator_view(); ?>
+					    </div>
+					<?php endif; ?>
+
 				</div>
 				<div class="clearfix"></div>
 

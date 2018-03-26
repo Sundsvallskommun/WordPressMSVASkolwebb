@@ -1,0 +1,83 @@
+{
+    "key": "group_5ab8e58bc6442",
+    "title": "Hj\u00e4lteniv\u00e5er - green coin",
+    "fields": [
+        {
+            "key": "field_5ab8e4f9c53d2",
+            "label": "",
+            "name": "green_coin_levels",
+            "type": "repeater",
+            "instructions": "Niv\u00e5erna m\u00e5ste anges i \u00f6kande sifferordning. B\u00f6rja med 0 och avsluta med 100",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5ab8e511c53d3",
+                    "label": "Procentsats",
+                    "name": "green_coin_level",
+                    "type": "text",
+                    "instructions": "inkludera inte procenttecken\r\nskriv 50 f\u00f6r 50%\r\nskriv 75 f\u00f6r 75% \r\nskriv 100 f\u00f6r 100%",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ab8e57ac53d4",
+                    "label": "Namn",
+                    "name": "green_coin_level_displayname",
+                    "type": "text",
+                    "instructions": "Ange namn p\u00e5 niv\u00e5n",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-msva-skolwebb"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1522068769
+}

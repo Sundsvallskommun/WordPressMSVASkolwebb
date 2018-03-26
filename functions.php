@@ -1,6 +1,31 @@
 <?php
 
-require_once __DIR__ . '/lib/hb-class-loader.php';
+require_once STYLESHEETPATH . '/lib/hb-class-loader.php';
+
+
+
+if (is_admin()) {
+
+}
+else {
+
+}
+require_once STYLESHEETPATH . '/lib/msva/challenges/class-msva-challenge-post.php';
+new MSVA_Challenge_post();
+
+require_once STYLESHEETPATH . '/lib/msva/green-coin/class-green-coin-calc.php';
+$green_coin_calc = new Green_Coin_Calc();
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * Only Himlabadet options
@@ -20,8 +45,8 @@ function hb_options_page( $subpages ) {
 
 	$subpages[] = array(
 
-		'page_title'  => 'Anpassade inställningar för Himlabadet',
-		'menu_title'  => 'Himlabadet',
+		'page_title'  => 'Anpassade inställningar för MSVA - skolwebb',
+		'menu_title'  => 'MSVA - skolwebb',
 		'parent_slug' => 'general-settings',
 
 	);
@@ -236,18 +261,6 @@ function get_current_template( $echo = false ) {
 }
 
 /**
- * Function get_facebook_appid
- * @since 1.0.0
- * @author Jonatan Olsson <jonatan@kingmary.se>
- *
- * @return mixed|null|void
- *
- */
-function get_facebook_app_id() {
-	return get_field( 'hb_facebook_app_id', 'options' );
-}
-
-/**
  * Get post thumbnail alternative text.
  *
  * @since 1.0.0
@@ -270,3 +283,17 @@ function get_post_thumbnail_alt( $post_id = null ) {
 
 	return get_image_alt( $thumbnail_id );
 }
+
+/**
+ * Function get_facebook_appid
+ * @since 1.0.0
+ * @author Jonatan Olsson <jonatan@kingmary.se>
+ *
+ * @return mixed|null|void
+ *
+ */
+function get_facebook_app_id() {
+	return get_field( 'hb_facebook_app_id', 'options' );
+}
+
+
