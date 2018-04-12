@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.702898551">
+        <g id="Startsida" transform="translate(-209.000000, -744.000000)" fill-rule="nonzero" fill="#030104">
+            <g id="icon" transform="translate(209.000000, 744.000000)">
+                <path d="M14,0 C6.26805893,0 0,6.26828309 0,13.998498 C0,21.7327182 6.26805893,28 14,28 C21.7349449,28 28,21.7317169 28,13.998498 C28.0010013,6.26828309 21.7349449,0 14,0 Z M14,26.5671065 C7.05907595,26.5671065 1.43284223,20.9396703 1.43284223,13.998498 C1.43284223,7.0593284 7.05907595,1.43289347 14,1.43289347 C20.940924,1.43289347 26.5671578,7.06032972 26.5671578,13.998498 C26.5671578,20.9396703 20.940924,26.5671065 14,26.5671065 Z" id="Shape"></path>
+                <polygon id="Shape" points="17.9113099 4 8 14.2375597 11.6743292 14.2375597 8.84961966 22 19 11.7643501 15.3219928 11.7643501"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
