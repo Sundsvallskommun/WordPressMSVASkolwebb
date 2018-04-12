@@ -4,7 +4,7 @@
   }
 
   &__top-image {
-	margin-bottom: .75rem;
+	margin-bottom: 0rem;
 
 	img {
 	  border-radius: $border-radius;
@@ -16,10 +16,10 @@
 
   &__breadcrumb {
 	.breadcrumb {
-	  color: hb-color(blue, 3);
+	  color: #fff;
 	  font-size: font-size(9);
 	  & > .active {
-		color: hb-color(blue, 3);
+		color: #fff;
 		font-size: font-size(9);
 	  }
 	}

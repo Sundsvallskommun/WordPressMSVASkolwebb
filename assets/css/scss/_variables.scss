@@ -30,6 +30,11 @@ $hb-palette: (
 $sk-eservice-bg: profile-color(grönsta, 3);
 $sk-eservice-fg: profile-color(grönsta, 2);
 
+
+
+$msva-green: #54a559;
+$msva-light-green: #b3cda2;
+$msva-gray-bg: #f7f9f5;
 //
 // Grayscale and brand colors for use across Bootstrap.
 
@@ -40,9 +45,9 @@ $gray-lighter: #e8e8ea;
 $gray-lightest: #f9f9fa;
 $post-text-color: #0a2036;
 
-$brand-primary: hb-color(blue, 4);
-$brand-success: hb-color(green, 2);
-$brand-info: hb-color(blue, 3);
+$brand-primary: $msva-green;
+$brand-success: $msva-green;
+$brand-info: $msva-green;
 $brand-warning: hb-color(orange);
 $brand-danger: hb-color(red);
 
@@ -148,9 +153,9 @@ $grid-gutter-width: 1.875rem !default; // 30px
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-large: "Rubik", sans-serif;
-$font-family-sans-serif: "Roboto", sans-serif;
-$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-large: "Lato", sans-serif;
+$font-family-sans-serif: "Lato", sans-serif;
+$font-family-serif: "Lato", sans-serif;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !important;
 

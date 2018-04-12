@@ -1,0 +1,55 @@
+@import 'modal';
+
+.green-coin-calc-wrapper {
+  background-color: $msva-gray-bg;
+  padding: 25px;
+  max-width: 40.5625rem;
+
+
+  select {
+
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    height: calc(3rem + 2px);
+    padding: .0rem 2.8rem .0rem 1.5rem;
+    line-height: 1.5;
+    color: $msva-green;
+    vertical-align: middle;
+    background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAMAAAC5KTl3AAAAY1BMVEUAAABUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVlUpVn2AeU/AAAAIHRSTlMAAgMEBQYNDxYXGBkeLzRSV19hb3Bxe5Klxc7k8fP1+fNe6FUAAADXSURBVFjD7c/JDoJAEIThclfEfd+w3v8pPbgA4wBTTTyYzH+qS39JA7FY7FfNV0P9aLSeffaezKYqkN7JXQ7oRHonyW0OqMQTIDcA1nyVJTpALoCMOpEDvABHykQB4AHon1WiCJx6AAYi8QWohAcoE7fEAChEBRBOVAIOMTEAYUQtEEI0AM1EI9BEBAD1RBDgEGMDUE0EA1WEAPgJCfARIlAmrmMD4BIGwHnEApQJE+AnJMBHiMA3IQMuYQDKhAkoEkYgJ8zAm2gBPIlWANBdLjqIxWJ/2AOzF1oS8fY6zQAAAABJRU5ErkJggg==")
+      no-repeat right .75rem center;
+    background-size: 20px 20px;
+    border: 2px solid $msva-green;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+  }
+
+
+  .form-group {
+    display: inline-block;
+  }
+
+  label {
+    font-weight: 700;
+  }
+
+}
+
+
+
+#green-coin-calc-submit {
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: $msva-green;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+

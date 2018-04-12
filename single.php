@@ -2,23 +2,17 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-	<div class="container-fluid">
+	<div class="container-fluid mb-5">
 
 		<div class="single-post__row">
-
-			<aside class="sk-sidebar single-post__sidebar">
-
-				<a href="#post-content" class="focus-only"><?php _e( 'Hoppa över sidomeny', 'sk_tivoli' ); ?></a>
-
-				<?php do_action( 'sk_page_helpmenu' ); ?>
-
-			</aside>
-
 			<div class="single-post__content" id="post-content">
 
 				<?php do_action( 'sk_before_page_title' ); ?>
 
 				<h1 class="single-post__title"><?php the_title(); ?></h1>
+                <div class="single-post__breadcrumb">
+                    <?php the_breadcrumbs(); ?>
+                </div>
 
 				<?php if ( has_post_thumbnail() && ! get_field( 'top_image' ) ): ?>
 					<?php the_post_thumbnail(); ?>
@@ -44,7 +38,7 @@
 				</div>
 				<div class="clearfix"></div>
 
-				<div class="container-text container-text--center m-t-1">
+				<div class="container-text container-text--center mt-01">
 					<?php do_action( 'sk_after_page_content' ); ?>
 				</div>
 
@@ -56,4 +50,4 @@
 
 <?php endwhile; ?>
 
-<?php get_footer(); ?>
+<?php wp_footer(); ?>

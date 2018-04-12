@@ -88,7 +88,7 @@
 
 	a {
 	  font-weight: 800;
-	  color: hb-color(blue, 3);
+	  color: $msva-green;
 	}
 
 	&:first-of-type {
@@ -96,7 +96,7 @@
 	}
 
 	&.current-menu-item {
-	  background-color: hb-color(blue, 3);
+	  background-color: $msva-green;
 	  a {
 		color: white;
 	  }

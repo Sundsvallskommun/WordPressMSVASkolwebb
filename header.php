@@ -51,7 +51,7 @@
 
 		<div class="col-sm-3 logo-container <?php echo $has_logo ? 'haslogo' : '' ?>">
 
-			<h1><?php get_template_part( 'partials/site-logo' ); ?></h1>
+			<div class="h1"><?php get_template_part( 'partials/site-logo' ); ?></div>
 
 		</div>
 
