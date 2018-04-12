@@ -2,7 +2,8 @@
 //  This is just a file of shame
 // */
 //
-//body {
+//
+// body {
 //  font-family: $font-family-base;
 //}
 //
@@ -38,8 +39,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   max-width: 100vw;
   overflow-x: hidden;
-
-  height: 5000px;
 }
 
 .no-margin {
@@ -56,3 +55,22 @@ body {
   display: inline-block;
   overflow: hidden;
 }
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.single-post__top-image {
+  max-width: 46.875rem; // 750
+}
+
+
+//
+//.xdebug-var-dump
+//{
+//  color:black;
+//}

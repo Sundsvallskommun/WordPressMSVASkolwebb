@@ -1,0 +1,19 @@
+.navigation-page {
+  &--green {
+	.page-icon, .nav-card-title__icon {
+	  background-color: hb-color(green, 3);
+	}
+  }
+
+  &--blue {
+	.page-icon, .nav-card-title__icon {
+	  background-color: $brand-info;
+	}
+  }
+
+  &--orange {
+	.page-icon, .nav-card-title__icon {
+	  background-color: $brand-warning;
+	}
+  }
+}

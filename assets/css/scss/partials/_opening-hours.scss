@@ -1,0 +1,139 @@
+.opening-hours-wrapper {
+
+  padding: 1.8rem 1.75rem;
+
+  .list-group-item {
+	border: none;
+	padding: .75rem 0;
+	padding-left: 1.5rem;
+	.icon {
+	  width: 1.5625rem;
+	  height: 1.5625rem;
+	  position: absolute;
+	  left: 0;
+	  top: .375rem;
+	  //left: -.2rem;
+	  //top: .5rem;
+	}
+  }
+
+  .location-information, .nav-title {
+	margin-left: 0.625rem;
+  }
+
+  .btn {
+	background-color: rgba(hb-color(blue, 3), .05);
+	width: 60%;
+	margin-top: 3.75rem;
+	@include media-breakpoint-down(md) {
+	  width: 80%;
+	}
+	&:hover {
+	  background-color: rgba(hb-color(blue, 3), .1);
+	  //background-color: rgba(hb-color(blue, 4), .5);
+
+	}
+  }
+
+  a {
+	color: hb-color(blue, 3);
+	font-weight: 600;
+  }
+
+  p {
+	margin: 0;
+  }
+
+  .nav-title {
+	cursor: pointer;
+	padding: 0 1.25rem;
+	height: 2.75rem;
+	line-height: 2.75rem;
+	background-color: rgba(hb-color(blue, 3), .05);
+	border-radius: $border-radius;
+	//box-shadow: inset 0 3px 0 0 rgba(hb-color(blue, 3), .05);
+	font-weight: 600;
+	color: rgba(hb-color(blue, 3), .8);
+
+	.date {
+	  display: inline-flex;
+	  width: 100%;
+
+	  .change-me {
+		flex: 1 1 auto;
+		display: inline-block;
+	  }
+
+	  & > .icon {
+		top: 2px;
+		flex: 0 0 auto;
+	  }
+	}
+
+	&:hover {
+	  background-color: rgba(hb-color(blue, 3), .1);
+	  //background-color: rgba(hb-color(blue, 4), .5);
+
+	}
+
+  }
+
+  .extra-information {
+	font-size: font-size(9);
+	margin-top: 2px;
+  }
+}
+
+.current-location, .current-date, #opening-hours-datepicker {
+  display: none;
+}
+
+.opening-hours-header {
+  padding: .75rem 0; //1.25rem;
+
+  .icon-calendar {
+	width: 1.5625rem;
+	height: 1.5625rem;
+  }
+}
+
+.opening-hours-nav {
+  ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	li {
+	  float: left;
+	  color: #3d3d3d;
+	  display: flex;
+	  align-items: center;
+	}
+  }
+  .nav-title {
+	width: 90%;
+	text-align: center;
+	.header {
+	  width: 100%;
+	}
+  }
+  .nav-left {
+	width: 10%;
+	cursor: pointer;
+  }
+}
+
+.page-template-page-start-advanced {
+  .datepicker-wrapper, .datepicker {
+	width: 200px;
+
+  }
+
+  .datepicker-wrapper {
+	margin: auto;
+  }
+
+  .datepicker {
+	margin-left: 30px;
+  }
+}

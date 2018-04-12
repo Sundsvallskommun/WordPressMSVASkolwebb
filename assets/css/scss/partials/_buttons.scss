@@ -1,0 +1,14 @@
+.btn {
+
+}
+
+.gform_button {
+  @extend .btn-primary;
+  @extend .btn;
+}
+
+.btn-sm {
+  padding: $btn-padding-y $btn-padding-x;
+  border-radius: $btn-border-radius-sm;
+  font-size: font-size(9);
+}

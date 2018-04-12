@@ -1,33 +1,51 @@
 .himlabadet-header {
+  //overflow-y: visible;
+  //overflow-x: hidden;
+
   background-color: transparent;
   position: relative;
-  min-height: 80vh;
 
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
 
   &__inner-container {
-	position: relative;
-	width: 100%;
-	padding: 2rem 0; // 2.5
 
-	background-color: transparent;
-	background-image: url('../images/header.svg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-
-	&:before, &:after {
-	  @include overlay();
-	  background-color: white;
-	  z-index: -1;
-	  left: -95%;
+	@include media-breakpoint-down('sm') {
+	  //background-color: transparent;
+	  //display: none;
 	}
 
-	&:after {
-	  left: auto;
-	  right: -95%;
+	@include media-breakpoint-up('md') {
+	  position: relative;
+	  width: 100%;
+	  padding-top: 4rem;
+	  padding-bottom: 4rem;
+
+	  background-color: transparent;
+	  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='173'%3e%3cpath fill='%23FFF' fill-rule='evenodd' d='M1032.56399 173H1453V-1H0v174h416.993268c130.433264-1.035373 73.104388-16.477475 73.104388-22.314081 0-8.419061 92.961143 10.288429 102.562672 11.508887 7.58464.964081 45.808481 7.900926 47.475018 3.776207 2.151822-5.326482-24.47017-16.570981-30.33856-19.841112-9.199099-5.126188-25.367355-12.593144-4.521431-15.249041 14.073248-1.793298 39.977966-.654294 53.345776 1.37268 35.901577 5.443988 63.669314 12.694627 99.381512 18.432379 14.295768 2.296703 29.363257 3.594608 8.472355-.954734-13.258916-2.886903-26.558076-5.167582-39.686795-8.516496-11.140236-2.841503-19.730954-6.34531-2.717593-5.646952 10.806456.441981 21.991669 2.287356 32.551931 3.557219 7.833201.942717 35.430496 3.475767 31.347006.603552-7.939727-5.580187-30.693647-12.870885-26.532037-15.605564 10.41586-6.843374 90.627454 13.02845 92.821886 12.352792 2.194433-.674323-9.788541-5.211647-5.158218-7.465621 5.3547-2.606491 27.180662.825211 33.188719 1.876086 12.970114 2.268662 42.36888 10.27107 44.3763 9.489924 1.692577-.66097-1.020281-4.672189 11.784126-2.534385 3.688161.218988 7.743245 1.18841 11.211253 1.896115 7.08752 1.450128 15.628525 3.287491 21.449571 6.086264 18.092823 8.699431-18.144903 2.816132-25.698769 1.352651-1.200191 10.644953-44.288711.715717-53.69376-.909334-7.454442-1.288557-16.116177-4.08466-22.824938-2.28335-1.590786.427293-8.938702 2.402191-9.239341 6.659104-.30064 4.258248 14.958942 7.97363 29.574177 9.893434 14.615234 1.919804 38.049687 5.354888 33.514648.915292C909.946173 148.92425 952.71618 169.914473 1032.56399 173z'/%3e%3c/svg%3e ");
+	  //background-image: url('../images/header.svg');
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: center bottom;
+
+	  @include media-breakpoint-up(lg) {
+		&:before, &:after {
+		  @include overlay();
+		  background-color: white;
+		  width: calc((100vw - 1200px) / 2);
+		  z-index: 0;
+		  left: calc((100vw - 1200px) / 2 * -1);
+		  overflow: hidden;
+		}
+
+		&:after {
+		  left: auto;
+		  right: calc((100vw - 1200px) / 2 * -1);
+
+		}
+	  }
+
 	}
 
   }
@@ -37,7 +55,56 @@
   }
 
   .logo-container {
-	max-width: 17.625rem; // + ~1rem padding each side
+	//max-width: 17.625rem; // + ~1rem padding each side
+	.custom-logo-link {
+	  display: block;
+	  max-width: 11.25rem;
+	}
+	.custom-logo {
+	  width: 100%;
+	}
   }
 
+  .header-content {
+	//height: 70vh;
+	min-height: 35rem;
+  }
+
+}
+
+.navbar {
+  margin: 1rem 0;
+}
+
+@include media-breakpoint-down(sm) {
+  .mobile-header {
+	height: auto;
+	padding: 1rem;
+
+	.custom-logo-link {
+	  display: block;
+	  .custom-logo {
+		width: 40%;
+		max-width: 8.75rem;
+		margin: 0 auto;
+		display: block;
+		max-height: initial;
+	  }
+	}
+  }
+  .navbar__search-form {
+	display: none;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .offcanvas {
+	position: fixed;
+	z-index: 90;
+	width: 100% !important;
+	padding: 0;
+	.navbar {
+	  padding: $grid-gutter-width/2;
+	}
+  }
 }

@@ -5,10 +5,15 @@
 	//padding:1rem;
 	width: 5rem;
 	height: 5rem;
+	flex: 0 0 auto;
   }
 }
 
 .media-body {
   margin-left: 1.125rem;
-  width:100%;
+  width: 100%;
+  flex: 1 1 auto;
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
 }

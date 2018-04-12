@@ -1,0 +1,11 @@
+@mixin ie() {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	@content;
+  }
+}
+
+@mixin ff() {
+  @media screen and (-moz-images-in-menus: 0) {
+	@content
+  }
+}

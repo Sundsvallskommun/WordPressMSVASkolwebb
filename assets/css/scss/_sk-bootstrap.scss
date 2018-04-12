@@ -1,16 +1,12 @@
-
 /*
  * Import needed components from bootstrap
  * */
-
 // Core variables and mixins
 //@import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/variables";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/mixins";
-
 // Reset and dependencies
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/normalize";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/print";
-
 // Core CSS
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/reboot";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/type";
@@ -20,7 +16,6 @@
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/tables";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/forms";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/buttons";
-
 // Components
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/animation";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/dropdown";
@@ -41,32 +36,26 @@
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/list-group";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/responsive-embed";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/close";
-
 // Components w/ JavaScript
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/modal";
 //@import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/tooltip";
 //@import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/popover";
 //@import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/carousel";
-
 // Utility classes
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/utilities";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/utilities-background";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/utilities-spacing";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/bootstrap/utilities-responsive";
-
-
 // Customizations
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/reboot";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/type";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/images";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/grid";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/buttons";
-
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/dropdown";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/navbar";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/breadcrumb";
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/alert";
-
 // New components
 @import "../../../../sk-tivoli/assets/css/scss/bootstrap-sk/navigation-card";
 

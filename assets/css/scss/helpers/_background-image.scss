@@ -1,14 +1,56 @@
 .background-image {
   @include overlay;
+  background-color: rgba(0, 0, 0, .3);
   background-position: center;
   background-size: cover;
 
-  &--gradiented {
+  &--tone {
 	z-index: -1;
 
 	&:after {
 	  @include overlay();
-	  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 20%, rgba(#000, .8) 67%);
+	  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 10%, rgba(#000, .7) 67%);
 	}
   }
+
+  &--orange {
+	&:after {
+	  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 10%, rgba(hb-color(orange, 1), .8) 67%);
+	}
+  }
+  &--blue {
+	&:after {
+	  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 10%, rgba(hb-color(blue, 3), .8) 67%);
+	}
+  }
+  &--green {
+	&:after {
+	  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 10%, rgba(hb-color(green, 3), .8) 67%);
+	}
+  }
+
+  @include media-breakpoint-down(sm) {
+	&--tone {
+	  &:after {
+		background-image: linear-gradient(-180deg, rgba(0, 0, 0, .5), rgba(#000, .8) 67%);
+	  }
+	}
+
+	&--orange {
+	  &:after {
+		background-image: linear-gradient(-180deg, rgba(0, 0, 0, .5), rgba(hb-color(orange, 1), .8) 67%);
+	  }
+	}
+	&--blue {
+	  &:after {
+		background-image: linear-gradient(-180deg, rgba(0, 0, 0, .5), rgba(hb-color(blue, 3), .8) 67%);
+	  }
+	}
+	&--green {
+	  &:after {
+		background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00), rgba(hb-color(green, 3), .8) 67%);
+	  }
+	}
+  }
+
 }

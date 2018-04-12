@@ -1,0 +1,56 @@
+body.search-results main {
+  background: initial;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.main-content {
+  padding-top: 2rem;
+}
+
+.page-template-page-start-advanced .main-content, .page-template-page-navigation .main-content {
+  @include media-breakpoint-up(sm) {
+	margin-top: -6.5rem;
+	padding-top: 0;
+  }
+}
+
+.page-template-page-navigation .main-content, .page-template-page-navigation main > .container-fluid {
+  @include media-breakpoint-up(sm) {
+	margin-top: -4.5rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .main-content > .container-fluid {
+	margin-top: 0;
+  }
+}
+
+.container-text {
+  max-width: 46.875rem; // 750
+
+  //&--center
+  //{
+  //display: block;
+  //margin:0 auto;
+  //}
+}
+
+.page-contact__fields {
+  dt {
+
+  }
+  dd {
+	font-size: font-size(7);
+	p {
+	  margin: 0;
+	}
+  }
+}

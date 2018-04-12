@@ -1,14 +1,22 @@
 .news-list {
   //padding: 0.75rem;
 
-  .news-item{
+  .news-item {
 	font-size: $font-size-sm;
   }
 
 }
 
 .news-item {
+
+  color: white;
+
+  &:hover, &:active, &:focus {
+	color: darken(white, 10%);
+  }
+
   &__title {
+	width: 100%;
 	font-size: 1em;
 	font-weight: bold;
   }
@@ -16,8 +24,9 @@
 	color: white;
 	display: block;
 	font-weight: bold;
+	margin: 0;
 	&:hover, &:active, &:focus {
-	  color: inherit;
+	  color: white;
 	}
   }
 
@@ -25,8 +34,24 @@
 	flex: 1 1 auto;
 	margin: 0;
 	line-height: 1.35;
+	width: 100%;
   }
   &__content {
 
+  }
+
+  @include media-breakpoint-down(sm) {
+
+	//flex-flow: column wrap;
+
+	.media &__image {
+	  width: 4rem;
+	  height: 4rem;
+	}
+
+	.media-body {
+	  //margin-left: 0;
+	  //margin-top: 1.125rem;
+	}
   }
 }

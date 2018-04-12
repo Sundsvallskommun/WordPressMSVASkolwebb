@@ -1,0 +1,26 @@
+.background-video {
+  @include overlay;
+  z-index: -1;
+  height: auto;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  @include media-breakpoint-down(lg) {
+	height: 100%;
+	width: auto;
+  }
+
+  &:after {
+	@include overlay();
+	background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 20%, rgba(#000, .8) 67%);
+  }
+}
+
+.background-video-overlay {
+  &:after {
+	@include overlay();
+	background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.00) 20%, rgba(#000, .7) 67%);
+  }
+}

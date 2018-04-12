@@ -1,0 +1,42 @@
+
+.screen {
+  position: fixed;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  width: 15em;
+  margin: auto;
+  z-index: 9999;
+
+  &:before {
+	transition: background .2s ease-out;
+	display: block;
+	padding: .5em;
+	color: #fff;
+
+	@include media-breakpoint-up(xs) {
+	  background: rgba(125, 0, 0, .8);
+	  content: 'col-xs'
+	}
+
+	@include media-breakpoint-up(sm) {
+	  background: rgba(125, 125, 0, .8);
+	  content: 'col-sm'
+	}
+
+	@include media-breakpoint-up(md) {
+	  background: rgba(0, 0, 125, .8);
+	  content: 'col-md'
+	}
+
+	@include media-breakpoint-up(lg) {
+	  background: rgba(125, 0, 125, .8);
+	  content: 'col-lg'
+	}
+	@include media-breakpoint-up(xl) {
+	  background: rgba(49, 173, 163, 0.8);
+	  content: 'col-xl'
+	}
+
+  }
+}

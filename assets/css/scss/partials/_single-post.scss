@@ -1,0 +1,55 @@
+.single-post {
+  &__row {
+
+  }
+
+  &__top-image {
+	margin-bottom: .75rem;
+
+	img {
+	  border-radius: $border-radius;
+	  @include media-breakpoint-up(md) {
+		width: 100%;
+	  }
+	}
+  }
+
+  &__breadcrumb {
+	.breadcrumb {
+	  color: hb-color(blue, 3);
+	  font-size: font-size(9);
+	  & > .active {
+		color: hb-color(blue, 3);
+		font-size: font-size(9);
+	  }
+	}
+  }
+
+  &__title {
+	&--with-breadcrumb {
+	  margin-bottom: .25rem
+	}
+
+	@include media-breakpoint-down(md) {
+	  //font-size:font-size(3);
+	}
+  }
+
+  &__content {
+	@include make-col();
+	@include make-col-span(12);
+
+	@include media-breakpoint-up(md) {
+	  @include make-col-span(10);
+	}
+	@include media-breakpoint-up(lg) {
+	  max-width: none; //48.125em;
+	}
+
+  }
+}
+
+
+
+
+

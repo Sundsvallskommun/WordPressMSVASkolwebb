@@ -1,0 +1,9 @@
+3
+.breadcrumb {
+  padding-bottom: 1.75rem;
+
+  .single-post__content &, & {
+	color: hb-color(blue, 3);
+
+  }
+}

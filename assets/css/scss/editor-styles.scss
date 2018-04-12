@@ -1,0 +1,19 @@
+body#tinymce {
+  padding: 1em !important;
+  background-color: white !important;
+}
+
+@import '../../../../sk-tivoli/assets/css/scss/profile-colors';
+@import '../../../../sk-tivoli/assets/css/scss/variables';
+@import '../../../../sk-tivoli/assets/css/scss/mixins';
+@import "variables";
+@import "sk-bootstrap";
+@import "helpers/overlay";
+@import "helpers/background-image";
+@import "helpers/ie";
+@import "helpers/links";
+@import "helpers/screen";
+
+@import "typography";
+
+

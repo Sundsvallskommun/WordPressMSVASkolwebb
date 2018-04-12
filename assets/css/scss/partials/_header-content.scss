@@ -1,6 +1,5 @@
 .header-content {
   color: white;
-
   width: 100%;
   flex: 1 1 auto;
   position: relative;
@@ -8,19 +7,40 @@
   padding: 6rem 0;
 
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 
   &__aside {
 	display: flex;
 	flex: 1 1 auto;
+	min-width: 50%;
 	flex-flow: column wrap;
 	justify-content: center;
+	padding-left: ($grid-gutter-width / 2);
+	padding-right: ($grid-gutter-width / 2);
 
+	&:first-child, &:last-child {
+	  width: 100%;
+	  @include media-breakpoint-up(md) {
+		width: 50%;
+	  }
+	}
 	&:only-child {
 	  justify-content: flex-end;
+	  width: 100%;
+
 	}
+
+	@include media-breakpoint-down(sm) {
+	  margin: 2rem 0;
+	}
+
   }
 
+  @include media-breakpoint-down(sm) {
+	padding: 4rem 0;
+	z-index: 0;
+
+  }
 }
 
 /**
@@ -30,20 +50,40 @@
 .header-content {
 
   &__pre-title {
-	font-size: 1.125rem;
+	font-size: font-size(7);
 	text-transform: uppercase;
 	line-height: 1.44;
 	font-weight: 400;
 	letter-spacing: 2px;
   }
   &__large-title {
-	font-size: 4.5rem;
+	font-size: font-size(1);
 	font-weight: bold;
+	margin-bottom: 1.5rem;
+	@include media-breakpoint-down(md) {
+	  font-size: font-size(2);
+	}
+	@include media-breakpoint-down(sm) {
+	  font-size: font-size(3);
+	}
   }
-
+  &__content {
+	font-weight: 500;
+	font-size: font-size(7);
+	line-height: 1.4;
+  }
   &__card {
-	background: rgba(#0A2036, .4);
-	padding-bottom: 1.5rem;
+	//padding-bottom: 1.5rem;
+
+	.card-block {
+	  @include media-breakpoint-down(sm) {
+		padding: 1.75rem;
+	  }
+	}
+
 	border: none;
+	p:only-child {
+	  margin-bottom: 0;
+	}
   }
 }

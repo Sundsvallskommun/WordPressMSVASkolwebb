@@ -11,14 +11,87 @@ h5.card-title {
 }
 
 .card-block {
-  padding: 1.5rem;
+  padding: 2rem;
+
+  @include media-breakpoint-down(md) {
+	padding: 1.75rem;
+  }
+  @include media-breakpoint-down(md) {
+	padding: 1.2rem;
+  }
+
+  //@include media-breakpoint-down(sm) {
+  //padding: 1rem .75rem;
+  //}
 
   &--small-y-padding {
 	padding-top: 1rem;
-	padding-bottom: 1rem;
   }
 
   &--extra-padding {
 	padding: 2.75rem;
   }
+  .card-title {
+	margin: .5rem 0 1rem;
+  }
+
 }
+
+.card {
+
+  border: none;
+
+  &--blue, &--orange, &--green {
+	color: white;
+
+	.btn {
+	  color: white;
+	}
+  }
+
+  &--blue {
+	background-color: hb-color(blue, 3);
+	&.card--transparent {
+	  background-color: rgba(hb-color(blue, 3), .2);
+	}
+  }
+
+  &--green {
+	background-color: hb-color(green, 3);
+	&.card--transparent {
+	  background-color: rgba(hb-color(green, 3), .2);
+	}
+  }
+
+  &--orange {
+	background-color: hb-color(orange, 1);
+
+	&.card--transparent {
+	  background-color: rgba(hb-color(orange, 1), .2);
+	}
+  }
+
+  &--transparent {
+	background-color: rgba(black, .4);
+
+	color: white;
+
+	.btn-primary {
+	  color: white;
+	}
+  }
+}
+
+/**
+	Test
+ */
+@include media-breakpoint-down(xs) {
+  [class*="col-"] {
+	.card:not(.card--keep-padding) .card-block {
+	  padding: 0;
+	}
+  }
+}
+
+
+

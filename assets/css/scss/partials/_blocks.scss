@@ -1,0 +1,82 @@
+
+.blocks {
+
+  .block-image-and-text {
+	background-color: transparent;
+  }
+}
+
+.block-image-and-text {
+
+  padding: 0;
+  float: none;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%; // ie flex bug
+
+  &--invert-order {
+
+	.block-image-and-text__image {
+	  order: 2;
+	  @include media-breakpoint-down('md') {
+		order: initial;
+	  }
+	  @include media-breakpoint-up(md) {
+		border-top-right-radius: $border-radius;
+		border-bottom-right-radius: $border-radius;
+	  }
+	}
+
+  }
+
+  &__image {
+	padding: 2rem 0;
+	overflow: hidden;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include media-breakpoint-up(md) {
+	  border-top-left-radius: $border-radius;
+	  border-bottom-left-radius: $border-radius;
+	}
+  }
+
+  &__title {
+
+  }
+
+  &__content {
+	flex: 1 1 auto;
+  }
+  &__footer {
+	flex: 1 1 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 2em;
+  }
+
+  .btn {
+	margin-top: 2rem;
+	background-color: rgba(0, 0, 0, .1);
+	@include media-breakpoint-down(sm) {
+	  font-size: .8em;
+	}
+	&:hover, &:focus, &:active {
+	  background-color: rgba(0, 0, 0, .3);
+	}
+  }
+
+}
+
+@include media-breakpoint-down(md) {
+  .blocks .block.block-image-and-text {
+	float: none;
+	padding: 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .row.blocks > [class*='col-'] {
+	margin-bottom: 2.5rem;
+  }
+}

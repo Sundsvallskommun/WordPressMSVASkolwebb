@@ -1,8 +1,30 @@
 .site-footer {
+  margin-top: 3rem;
+  padding-top: 3rem;
   background-color: white;
+  position: relative;
+
+  padding-bottom: 6rem;
+  color: hb-color(blue, 3);
+
+  .logo-container {
+	display: block;
+	.custom-logo-link {
+	  display: block;
+	  max-width: 11.25rem;
+
+	}
+	.custom-logo {
+	  width: 100%;
+	}
+  }
 
   &__upper {
-	padding: 3rem 0;
+
+	margin-bottom: 5rem;
+	@include media-breakpoint-down(md) {
+	  display: none;
+	}
   }
 
   .menu-item a {
@@ -10,5 +32,61 @@
 	&:hover {
 	  text-decoration: underline;
 	}
+  }
+
+  &__below {
+	.row + .row {
+	  margin-top: 3.4rem;
+	}
+
+	@include media-breakpoint-down(md) {
+	  aside + aside {
+		margin-top: $grid-gutter-width;
+	  }
+	}
+
+  }
+
+  .link {
+	margin-bottom: 1rem;
+	font-weight: bold;
+	font-size: font-size(7);
+	text-decoration: none;
+	color: hb-color(blue, 3);
+	fill: hb-color(blue, 3);
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+
+	.icon {
+	  display: inline-block;
+	  margin-right: 1rem;
+	}
+
+	&:hover {
+	  text-decoration: underline;
+	}
+
+	@include media-breakpoint-down(sm) {
+	  font-size: font-size(8);
+	}
+  }
+  .fb-page, .fb-page iframe[style], .fb-page span {
+	width: 100% !important;
+  }
+  .rounded-iframe {
+	@include media-breakpoint-up(md) {
+	  text-align: right;
+	}
+
+	@include media-breakpoint-down(md) {
+	  width: 100%;
+	}
+  }
+}
+
+.menu-item {
+  &:hover {
+	//background-color: rgba(hb-color(blue, 3), .1);
   }
 }

@@ -1,0 +1,44 @@
+
+.navigation-card {
+  .nav-card-title {
+	color: hb-color(blue, 3);
+	font-size: font-size(7);
+	font-family: $font-family-base;
+	padding-top: .2rem;
+	width: 100%;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	a {
+	  font-weight: 700;
+	}
+	@include media-breakpoint-down(sm) {
+	  font-size: font-size(8);
+	  padding-left: 0;
+	}
+	padding-left: 0;
+  }
+
+  .nav-card-text {
+	color: currentColor;
+  }
+
+  &:hover {
+	.link-list__icon {
+	  background: rgba(hb-color(blue, 1), .10) !important;
+	}
+  }
+
+  .link-list__icon {
+	transform: none;
+	position: relative;
+  }
+}
+
+.navigation-card {
+
+  .nav-card-title {
+	font-weight: 500;
+
+  }
+}

@@ -1,0 +1,50 @@
+.navigation-page {
+
+  &__header, &__inner-container {
+	display: flex;
+	flex: 1 1 auto;
+  }
+  &__inner-container {
+	flex-flow: column nowrap;
+
+  }
+
+  &__header {
+	padding: 4rem;
+
+	@include media-breakpoint-down(sm) {
+	  flex-flow: column wrap;
+	  align-items: center;
+	}
+
+	.page-title {
+	  font-weight: 500;
+	  font-size: font-size(3);
+	  color: #0a2036;
+	  float: none;
+	}
+
+	.page-icon {
+	  flex: 0 0 auto;
+
+	  @include media-breakpoint-down(sm) {
+		margin-bottom: 2rem;
+		flex: 0 0 auto;
+		width: 8rem;
+		height: 8rem;
+	  }
+
+	}
+
+  }
+
+  &__header-content {
+	padding: 0;
+
+	p {
+	  margin: 1.875rem 0 0;
+	  font-size: font-size(7);
+	  color: #0a2036;
+	}
+  }
+}
