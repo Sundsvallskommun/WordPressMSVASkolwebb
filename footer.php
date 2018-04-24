@@ -41,7 +41,7 @@ ob_start();
 					<div class="col-md-12 col-md-6">
 						<?php $has_logo = function_exists( 'the_custom_logo' ) && has_custom_logo(); ?>
 						<div class="logo-container no-margin no-padding <?php echo $has_logo ? 'haslogo' : '' ?>">
-							<?php the_custom_logo(); ?>
+							<?php //the_custom_logo(); ?>
 						</div>
 					</div>
 					<!-- /.col-md-12 -->

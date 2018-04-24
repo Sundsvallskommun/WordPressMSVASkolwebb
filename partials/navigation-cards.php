@@ -37,9 +37,9 @@
 					?>
 					<div class="navigation-card <?php echo $is_shortcut ? 'shortcut' : ''; ?>">
 						<h2 class="nav-card-title">
-				<span class="link-list__icon">
-					<?php the_icon( 'arrow-right' ); ?>
-				</span>
+                        <span class="link-list__icon">
+
+                        </span>
 
 							<?php if ( $is_shortcut === 'page' && is_null( get_field( 'page_link', $child_id ) ) ) : ?>
 								<?php echo $title; ?>

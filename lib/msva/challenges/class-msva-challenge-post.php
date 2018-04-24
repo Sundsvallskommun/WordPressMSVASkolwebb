@@ -11,10 +11,10 @@ class MSVA_Challenge_post {
     public function register_post_type() {
 
         $labels = array(
-            'name'               => __( 'Challenge', 'msva' ),
-            'singular_name'      => __( 'Challenge', 'msva' ),
-            'menu_name'          => __( 'Challenge', 'msva' ),
-            'name_admin_bar'     => __( 'Challenge', 'msva' ),
+            'name'               => __( 'challenges', 'msva' ),
+            'singular_name'      => __( 'challenges', 'msva' ),
+            'menu_name'          => __( 'challenges', 'msva' ),
+            'name_admin_bar'     => __( 'challenges', 'msva' ),
             'add_new'            => __( 'Skapa ny', 'msva' ),
             'add_new_item'       => __( 'Skapa ny challenge', 'msva' ),
             'new_item'           => __( 'Ny challenge', 'msva' ),

@@ -26,6 +26,7 @@
     margin: 15% auto; /* 15% from the top and centered */
     max-width: 52rem;
     border:none;
+    border-radius: 8px;
 
     .coin {
       background: url("../images/coin.svg");
@@ -40,8 +41,8 @@
   .modal-footer {
     background-color: $msva-light-green;
     height: 35px;
-    border-bottom-left-radius: 0.3125rem;
-    border-bottom-right-radius: 0.3125rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 
   .modal-text {
@@ -51,10 +52,11 @@
 
   /* The Close Button */
   .close {
-    color: #aaa;
+    color: #fff;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    opacity: 0.8;
   }
 
   .close:hover,
@@ -69,6 +71,25 @@
       url("../images/modal-coins.svg");
     height: 150px;
     background-repeat: repeat-x;
+    border-radius: 8px;
 
+  }
+
+  .score-download {
+    color: $msva-green;
+    font-size: 30px;
+  }
+
+  .score {
+    font-size: 45px;
+    color: $msva-green;
+  }
+  .flex-content {
+    display: flex;
+  }
+
+  .calc-loader {
+    margin-top: 10px;
+    margin-left: 10px;
   }
 }

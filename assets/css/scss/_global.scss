@@ -78,6 +78,10 @@ body.single {
 
 }
 
+h2,h3,h4,h5,h6 {
+  color: $msva-green;
+}
+
 h1 {
   color: #fff;
   background-color: $msva-green;
@@ -96,6 +100,9 @@ h1 {
 .mr-5 {
   margin-right: 5rem;
 }
+.mr-1 {
+  margin-right: 1rem;
+}
 .mt-01 {
   margin-top: 0.1rem;
 }
@@ -110,4 +117,29 @@ h1 {
   padding-left: 10px;
   padding-right: 10px;
   font-size:3rem;
+}
+
+.msva-loader {
+  border: 5px solid #c5c5c5;
+  border-radius: 50%;
+  border-top: 5px solid $msva-green;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 0.7s linear infinite; /* Safari */
+  animation: spin 0.7s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hidden {
+  display: none;
 }

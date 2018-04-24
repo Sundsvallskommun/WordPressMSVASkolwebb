@@ -10,7 +10,7 @@
         </select>
     </div>
     <div class="form-group">
-        <label for="number-passed-challenge" class="calc-label">Hur många är ni i laget?</label>
+        <label for="number-passed-challenge" class="calc-label">Hur många klarade utmaningen?</label>
         <select id="number-passed-challenge">
           <option value="0">0</option>
           <option value="1">1</option>
@@ -20,15 +20,17 @@
         </select>
     </div>
     <hr class="line">
-    <input id="green-coin-calc-submit" type="submit" value="räkna ut lagets greencoins">
+    <div class="flex-content">
+        <input id="green-coin-calc-submit" type="submit" value="räkna ut lagets greencoins">
+        <div id="calc-loader" class="hidden msva-loader calc-loader"></div>
+    </div>
+
     <input id="green-coin-calc-nonce" type="hidden" value="<?php echo wp_create_nonce( 'green-coin-calc' ); ?>" name="nonce" />
 
 
 
 
 </div>
-
-<button id="myBtn">Open Modal</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -42,17 +44,17 @@
             <span class="close">&times;</span>
         </div>
 
-        <div class="modal-text">
+        <div class="modal-text mb-5">
             <span class="h1-look-alike">bra jobbat!</span>
             <p class="mt-1">Utmaningen är avklarad!</p>
             <p>Så här många greencoins fick laget:</p>
             <hr class="line">
-                <img width="70px" height="70px" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/coin.svg';?>" alt="coin"><span id="score" class="score">7,500</span>
+                <img class="mr-1" width="103px" height="103px" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/coin.svg';?>" alt="coin"><span id="score" class="score">7,500</span>
             <hr class="line">
 
             <span>nivå:</span><span id="level" class="level">MILJÖHJÄLTAR</span>
             <br>
-            <a id="download" href="">Ladda hem och skriv ut ert diplom</a>
+            <a class="score-download" id="download" href="">Ladda hem och skriv ut ert diplom</a>
 
         </div>
 
@@ -63,36 +65,3 @@
 
 
 </div>
-
-
-
-
-<script>
-    // Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-
-</script>

@@ -1,7 +1,7 @@
 
 .navigation-card {
   .nav-card-title {
-	color: hb-color(blue, 3);
+	color: $msva-green;
 	font-size: font-size(7);
 	font-family: $font-family-base;
 	padding-top: .2rem;
@@ -23,22 +23,23 @@
 	color: currentColor;
   }
 
-  &:hover {
-	.link-list__icon {
-	  background: rgba(hb-color(blue, 1), .10) !important;
-	}
-  }
 
   .link-list__icon {
 	transform: none;
 	position: relative;
+	background-image: url('../images/globe.svg') !important;
+	background-repeat: no-repeat !important;
+	background-color: transparent !important;
+  }
+  .link-list__icon {
+	background-color: transparent !important;
   }
 }
 
 .navigation-card {
 
   .nav-card-title {
-	font-weight: 500;
+	font-weight: 900;
 
   }
 }
