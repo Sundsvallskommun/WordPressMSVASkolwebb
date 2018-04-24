@@ -23,7 +23,7 @@ body.search-results main {
 
 .page-template-page-navigation .main-content, .page-template-page-navigation main > .container-fluid {
   @include media-breakpoint-up(sm) {
-	margin-top: -4.5rem;
+	margin-top: 4.5rem;
   }
 }
 

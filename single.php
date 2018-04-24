@@ -39,7 +39,7 @@
 				<div class="clearfix"></div>
 
 				<div class="container-text container-text--center mt-01">
-					<?php do_action( 'sk_after_page_content' ); ?>
+					<?php do_action( 'msva_after_page_content' ); ?>
 				</div>
 
 			</div>

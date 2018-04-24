@@ -297,3 +297,13 @@ function get_facebook_app_id() {
 }
 
 
+add_action( 'msva_after_page_content', 'msva_display_modified_date', 50 );
+
+function msva_display_modified_date() {
+?>
+	<div class="single-post__date">
+		<span class="text-muted"><?php _e('Senast ändrad', 'sk_tivoli'); ?>: </span>
+		<?php printf('%s', get_the_modified_date()); ?>
+	</div>
+<?php
+}

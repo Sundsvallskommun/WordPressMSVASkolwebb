@@ -25,7 +25,7 @@
 	  }
 	}
 	&:only-child {
-	  justify-content: flex-end;
+	  justify-content: flex-start;
 	  width: 100%;
 
 	}
@@ -50,13 +50,13 @@
 .header-content {
 
   &__pre-title {
-	font-size: font-size(7);
-	text-transform: uppercase;
-	line-height: 1.44;
-	font-weight: 400;
-	letter-spacing: 2px;
+	font-weight: 900;
+	font-size: 20px;
+    padding-left: 30px;
+    margin-top: -16px;
   }
   &__large-title {
+  	background-color: transparent !important;
 	font-size: font-size(1);
 	font-weight: bold;
 	margin-bottom: 1.5rem;
@@ -65,6 +65,12 @@
 	}
 	@include media-breakpoint-down(sm) {
 	  font-size: font-size(3);
+	}
+	div {
+		display: table;
+		padding-left: 15px;
+		padding-right: 15px;
+		background-color: #54a559;
 	}
   }
   &__content {

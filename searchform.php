@@ -12,12 +12,8 @@ $parent_id = advanced_template_top_ancestor();
 	<?php endif; ?>
 
 	<div class="input-group">
-		<?php
-		$site_name          = get_bloginfo( 'name', 'display' );
-		$search_placeholder = sprintf( __( "Sök på %s", 'hb' ), $site_name );
-		?>
 
-		<input type="text" value="<?php echo get_search_query(); ?>" class="form-control" placeholder="<?php echo $search_placeholder ?>" name="s" id="s" />
+		<input type="text" value="<?php echo get_search_query(); ?>" class="form-control" placeholder="Sök" name="s" id="s" />
 
 		<label class="sr-only" for="s"><?php _e( 'Sök', 'hb' ); ?></label>
 
