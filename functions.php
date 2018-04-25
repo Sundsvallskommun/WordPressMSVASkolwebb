@@ -307,3 +307,14 @@ function msva_display_modified_date() {
 	</div>
 <?php
 }
+
+
+add_action('init', function () {
+    unregister_post_type('contact_persons');
+}, 9999);
+
+//* Remove default post type from WordPress Dashboard
+add_action('admin_menu','customprefix_remove_default_post_type_menu_item');
+function customprefix_remove_default_post_type_menu_item() {
+	remove_menu_page('edit.php');
+}
