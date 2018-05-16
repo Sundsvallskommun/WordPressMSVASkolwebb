@@ -179,3 +179,30 @@ h1 {
   background-position: center;
   background-size: cover;
 }
+
+.single-challenge, .page {
+  .article-content {
+   li {
+      background-image: url(../images/paperclip.svg);
+      background-repeat: no-repeat;
+      padding-left: 2.1em;
+      margin-bottom: 10px;
+
+      a {
+        color: $msva-green;
+        &:hover, &:focus {
+          color: $msva-green;
+        }
+      }
+
+
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+
+}

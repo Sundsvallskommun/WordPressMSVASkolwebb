@@ -23,7 +23,7 @@
 				<?php do_action( 'sk_before_page_content' ); ?>
 
 
-				<div class="card container-text container-text--center">
+				<div class="article-content card container-text container-text--center">
 					<div class="card-block">
 						<?php the_content(); ?>
 						<div class="clearfix"></div>

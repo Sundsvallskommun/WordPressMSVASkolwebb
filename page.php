@@ -24,7 +24,7 @@
 
 				<?php do_action( 'sk_before_page_content' ); ?>
 
-				<div class="card container-text <?php if ( $has_top_image ): ?>container-text--center<?php endif; ?>">
+				<div class="article-content card container-text <?php if ( $has_top_image ): ?>container-text--center<?php endif; ?>">
 					<div class="card-block">
 						<?php the_content(); ?>
 					</div>

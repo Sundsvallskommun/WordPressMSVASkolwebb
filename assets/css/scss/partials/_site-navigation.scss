@@ -121,20 +121,20 @@
 	border-radius: $border-radius-lg;
 	a {
 	  font-weight: 800;
-	  color: hb-color(blue, 3);
+	  color: $msva-green;
 	  padding: 1.5rem;
 	  display: block;
 	}
 
 	&.current-menu-item, &:hover {
-	  background-color: hb-color(blue, 3);
+	  background-color: $msva-green;
 	  a {
 		color: white;
 	  }
 	}
 
 	&:hover {
-	  background-color: rgba(hb-color(blue, 3), .8);
+	  background-color: $msva-green;
 	  a {
 		text-decoration: none;
 	  }
@@ -151,7 +151,7 @@
 	&__button {
 	  line-height: 3.2rem;
 	  font-size: 1.75rem;
-	  color: hb-color(blue, 3);
+	  color: $msva-green;
 	  button {
 		background-color: transparent;
 		appearance: none;
@@ -199,8 +199,8 @@
 	width: 3rem;
 	height: 3rem;
 	font-size: .9rem;
-	fill: hb-color(blue, 3);
-	color: hb-color(blue, 3);
+	fill: $brand-primary;
+	color: $brand-primary;
 	.icon {
 	  font-size: 1.3rem;
 	}

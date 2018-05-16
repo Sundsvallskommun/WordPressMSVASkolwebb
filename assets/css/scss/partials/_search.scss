@@ -170,18 +170,22 @@
 	  text-align: center;
 	  padding: 1em;
 	  font-size: font-size(9);
-	  color: hb-color(blue, 3);
+	  color: #fff;
 	  font-weight: bolder;
 	  &:hover {
-		background: mix(hb-color(blue, 3), white, 15);
+		background: $brand-primary;
 	  }
 	}
   }
 }
 
 
+.search-module__item--page svg {
+	fill: $brand-primary !important;
+}
 
 
-
-
+.search-module__item .search-module__item__icon {
+    background: #707f87;
+}
 

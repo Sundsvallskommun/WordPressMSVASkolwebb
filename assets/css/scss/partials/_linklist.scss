@@ -48,12 +48,12 @@
 		width: 100%;
 		left: 0;
 	  }
-	  fill: hb-color(blue, 3);
+	  fill: $msva-green;
 	}
   }
 
   &__name {
-	color: hb-color(blue, 3);
+	color: $msva-green;
 	font-weight: 600;
 	line-height: 1.74em;
 	white-space: pre-line;
@@ -67,7 +67,7 @@
 	  text-decoration: underline;
 	}
 	.link-list__icon {
-	  background: rgba(hb-color(blue, 1), .10) !important;
+	  background: $msva-green !important;
 	}
   }
 

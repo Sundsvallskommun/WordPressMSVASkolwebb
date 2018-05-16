@@ -16,10 +16,11 @@ new MSVA_Challenge_post();
 require_once STYLESHEETPATH . '/lib/msva/green-coin/class-green-coin-calc.php';
 $green_coin_calc = new Green_Coin_Calc();
 
+require_once STYLESHEETPATH . '/lib/msva/challenges/class-challenges-short-code.php';
+new Challenges_Short_code();
 
-
-
-
+require_once STYLESHEETPATH . '/lib/msva/page-bank-shortcode/class-page-bank-shortcode.php';
+new Page_Bank_ShortCode();
 
 
 
@@ -311,10 +312,31 @@ function msva_display_modified_date() {
 
 add_action('init', function () {
     unregister_post_type('contact_persons');
+    unregister_post_type('blocks');
+
+    
+
+
 }, 9999);
 
 //* Remove default post type from WordPress Dashboard
 add_action('admin_menu','customprefix_remove_default_post_type_menu_item');
 function customprefix_remove_default_post_type_menu_item() {
 	remove_menu_page('edit.php');
+}
+
+
+add_action( 'init', 'create_page_cat_tax' );
+
+function create_page_cat_tax() {
+    register_taxonomy(
+        'page_category',
+        'page',
+        array(
+            'label' => __( 'Kategorier' ),
+            'public' => true,
+            'rewrite' => true,
+            'hierarchical' => true,
+        )
+    );
 }
