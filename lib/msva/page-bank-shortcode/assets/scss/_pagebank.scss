@@ -4,15 +4,23 @@
 		margin-bottom: 1.5em;
 		color:#000;
     font-size: 22px;
+    font-weight: 900;
 	}
+
+  .title {
+    text-transform: uppercase;
+    color: #9f9e9e;
+    font-size: 16px;
+  }
 
 	li {
       background-image: url(../images/globe.svg);
       background-repeat: no-repeat;
       padding-left: 2.1em;
       margin-bottom: 10px;
-      line-height: 22px;
-      margin-bottom: 20px;
+      line-height: 28px;
+      margin-bottom: 10px;
+
       a {
         font-weight: 900;
         font-size: 16px;
@@ -32,6 +40,8 @@
       list-style-type: none;
       padding: 0;
       margin: 0;
+      margin-top: 10px;
+      margin-bottom: 50px;
     }
 
 

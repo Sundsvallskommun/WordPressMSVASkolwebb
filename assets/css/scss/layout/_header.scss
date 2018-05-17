@@ -41,6 +41,11 @@
 
 	}
 
+	.slogan {
+		color: #9f9e9e;
+		margin-left: 12px;
+	}
+
   }
 
   & .background-image {
@@ -87,6 +92,10 @@
   }
   .navbar__search-form {
 	display: none;
+  }
+
+  .slogan {
+  	display: none;
   }
 }
 

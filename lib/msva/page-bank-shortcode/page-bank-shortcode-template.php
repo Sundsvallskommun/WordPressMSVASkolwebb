@@ -13,7 +13,7 @@
 
 
 						<li>
-							<a href="<?php echo get_permalink($challenge); ?>"><?php echo $page->post_title; ?></a>
+							<a href="<?php echo get_permalink($page); ?>"><?php echo $page->post_title; ?></a>
 						</li>
 
 				

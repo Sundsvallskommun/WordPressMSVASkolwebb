@@ -3,8 +3,11 @@
 
 class MSVA_Challenge_post {
 
+    const POST_TYPE = 'challenge';
+
     function __construct() {
 		add_action( 'init', array(&$this, 'register_post_type'));
+        add_action( 'pre_get_posts', array(&$this, 'archive_posts_by_name')); 
 	}
 
 
@@ -33,10 +36,18 @@ class MSVA_Challenge_post {
             'has_archive'        => true,
             'hierarchical'       => false,
             'menu_icon'          => 'dashicons-id',
-            //'supports'           => array( 'title', 'author', 'revisions', 'thumbnail' ),
         );
 
-        register_post_type('challenge', $args);
+        register_post_type(self::POST_TYPE, $args);
     }
+
+    public function archive_posts_by_name($query) {
+        
+        if ( is_post_type_archive(self::POST_TYPE) ) {
+           $query->set( 'order', 'ASC' );
+           $query->set( 'orderby', 'title' );
+        }
+    }
+
 
 }
