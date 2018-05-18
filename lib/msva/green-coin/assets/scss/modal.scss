@@ -1,8 +1,8 @@
 .single-challenge {
 
   hr {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     border-color: $msva-green;
   }
 
@@ -22,10 +22,11 @@
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
+    margin: 30px auto; 
     max-width: 52rem;
     border:none;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 
     .coin {
       background: url("../images/coin.svg");
@@ -40,8 +41,8 @@
   .modal-footer {
     background-color: $msva-light-green;
     height: 35px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .modal-text {
@@ -68,9 +69,10 @@
   .modal-header {
     background: linear-gradient(rgba(130, 173, 103, 0.61), rgba(130, 173, 103, 0.61)),
       url("../images/modal-coins.svg");
-    height: 150px;
+    height: 100px;
     background-repeat: repeat-x;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 
   }
 
@@ -82,6 +84,7 @@
   .score {
     font-size: 45px;
     color: $msva-green;
+    font-weight: 900;
   }
   .flex-content {
     display: flex;
@@ -91,4 +94,39 @@
     margin-top: 10px;
     margin-left: 10px;
   }
+
+  .bold {
+    font-weight: 900;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  .mt-2 {
+    margin-top: 2em;
+  }
+
+  @media print {
+    .no-print {
+      display: none;
+    }
+    .modal-content {
+      display: block !important;
+      margin-top:30px !important;
+    }
+
+  }
+
+  @include media-breakpoint-down(sm) {
+    .calc-loader {
+      display: none;
+    }
+  }
+
+ 
+
 }
+
+
+

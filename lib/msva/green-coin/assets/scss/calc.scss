@@ -5,6 +5,9 @@
   padding: 25px;
   max-width: 40.5625rem;
 
+  select::-ms-expand {
+      display: none;
+  }
 
   select {
 

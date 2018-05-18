@@ -142,6 +142,23 @@ class Green_Coin_Calc {
 
 	}
 
+    /**
+     *
+     * Write the html for the calculator
+     */
+    public static function output_diploma() {
+
+        // Buffer the output
+        ob_start();
+        include( STYLESHEETPATH . '/lib/msva/green-coin/assets/view/green-coin-diploma.php');
+        $output =  ob_get_contents();
+        ob_end_clean();
+
+
+        echo $output;
+
+    }
+
 
 
 }
