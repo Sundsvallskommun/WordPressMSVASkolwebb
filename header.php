@@ -18,7 +18,7 @@
 <?php $background_color = get_field( 'header_background_color' ) ? "background-image--" . get_field( 'header_background_color' ) : ''; ?>
 <?php $background_classes = ( $background_image ) ? 'background-image--tone ' . $background_color : $background_color; ?>
 
-
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
 <header class="site-header himlabadet-header">
 
 	<?php if ($can_have_header_content): ?>
