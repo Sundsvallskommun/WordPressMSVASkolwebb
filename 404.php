@@ -15,7 +15,7 @@
 
 				<h1 class="single-post__title">404, sidan kunde inte hittas.</h1>
 
-				<p>Gå till
+				<p class="mt-1">Gå till
 					<a href="<?php bloginfo( 'url' ); ?>">startsidan</a> eller testa sökfunktionen och navigeringen överst på sidan.
 				</p>
 			</div>
