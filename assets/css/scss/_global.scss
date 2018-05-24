@@ -101,10 +101,18 @@ h1 {
 .single-post__date {
   margin-left: 10px;
 }
-.single-post__date, .text-muted {
+.single-post__date {
   color: #fff !important;
   font-weight: 900;
+  .text-muted {
+    color: #fff;
+  }
 }
+
+.text-muted {
+  color: #9f9e9e;
+}
+
 
 .mr-5 {
   margin-right: 5rem;
