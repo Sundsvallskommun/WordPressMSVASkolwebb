@@ -6,8 +6,6 @@ get_header();
 
 	<h1 class="archive__title"><?php the_archive_title(); ?></h1>
 
-	<?php get_template_part( 'partials/archive-tags' ); ?>
-
 	<div class="row posts">
 
 		<?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
