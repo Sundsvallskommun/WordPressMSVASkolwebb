@@ -52,6 +52,7 @@ $template_theme_color_class = get_field( 'navtemplate_color' ) ? 'navigation-pag
 			<div class="col-xs-12">
 				<div class="card">
 					<div class="card-block">
+						<?php the_content(); ?>
 						<?php get_template_part( 'partials/navigation-cards' ); ?>
 					</div>
 					<!-- /.card-block -->
