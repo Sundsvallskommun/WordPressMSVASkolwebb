@@ -1,5 +1,6 @@
 .sk-collapse > h2 a:after, .sk-collapse > h3 a:after, .sk-collapse > h4 a:after {
   font-size: 1.8rem;
+  background: $msva-green;
 }
 
 .sk-collapse > h2 a[aria-expanded="true"]:after, .sk-collapse > h3 a[aria-expanded="true"]:after, .sk-collapse > h4 a[aria-expanded="true"]:after {
