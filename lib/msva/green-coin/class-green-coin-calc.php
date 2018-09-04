@@ -71,7 +71,6 @@ class Green_Coin_Calc {
         $success_percentage = $success_rate * 100;
         $levels = get_field('green_coin_levels', 'option');
 
-
         $min_diff = 100;
         $closest_level = null;
 

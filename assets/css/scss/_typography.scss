@@ -5,7 +5,7 @@ h5, h6 {
 .single-post__content {
   p:not(.lead) {
 	color: $post-text-color;
-	font-size: font-size(7);
+	font-size: 1.2rem;
 	line-height: 1.55;
 
 	@include media-breakpoint-down(md) {

@@ -1,7 +1,11 @@
 .single-post {
   &__row {
 
-  }
+	}
+
+	&__content a {
+		color: $msva-green;
+	}
 
   &__top-image {
 	margin-bottom: 0rem;
@@ -15,7 +19,7 @@
   }
 
   &__breadcrumb {
-	.breadcrumb {
+	.breadcrumb, a {
 	  color: #fff;
 	  font-size: font-size(9);
 	  & > .active {

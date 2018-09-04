@@ -19,8 +19,6 @@
 
             <span class="bold">nivå:</span><span id="level" class="level bold uppercase">MILJÖHJÄLTAR</span>
             <br>
-            <a class="score-download no-print" id="download" href="">Ladda hem och skriv ut erat diplom</a>
-
         </div>
 
 

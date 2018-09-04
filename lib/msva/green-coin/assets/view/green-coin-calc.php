@@ -3,12 +3,13 @@
     <div class="form-group mr-5">
         <label for="team-size" class="calc-label">Hur många är ni i laget?</label>
         <select id="team-size">
+        <option value="0">Välj</option>
           <?php for ($i = 1; $i <= 30; $i++) : ?>
             <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
           <?php endfor; ?>
         </select>
     </div>
-    <div class="form-group">
+    <div class="form-group " id="number-passed-challenge-wrapper">
         <label for="number-passed-challenge" class="calc-label">Hur många klarade utmaningen?</label>
         <select id="number-passed-challenge">
           <?php for ($i = 0; $i <= 30; $i++) : ?>
