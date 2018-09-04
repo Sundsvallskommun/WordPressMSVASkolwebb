@@ -61,7 +61,7 @@ class SK_Blocks {
 
 	public static function is_grid_border( $section ) {
 
-		if ( (int) $section['sk-row'][0]['sk-grid-border'] === 1 ) {
+		if ( isset($section['sk-row'][0]['sk-grid-border'])  && ((int) $section['sk-row'][0]['sk-grid-border'] === 1) ) {
 			echo ' has-grid';
 		}
 

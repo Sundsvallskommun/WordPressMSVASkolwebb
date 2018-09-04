@@ -31,7 +31,7 @@ class Page_Bank_ShortCode {
 
 		foreach($page_categories as $page_category) {
 
-			$grouped_pages[$page_category->name];
+			//$grouped_pages[$page_category->name];
 
 			$pages = get_posts(array(
 			  'post_type' => 'page',

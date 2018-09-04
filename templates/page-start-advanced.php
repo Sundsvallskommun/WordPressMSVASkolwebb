@@ -12,7 +12,7 @@ get_header();
 			<div class="row blocks<?php SK_Blocks::is_grid_border( $section ); ?>">
 				<?php foreach ( $section['sk-row'] as $col ) : ?>
 					<div
-						class="col-md-<?php echo $col['sk-grid']; ?><?php echo (int) $col['sk-grid-border'] === 1 ? ' block-grid-border' : null; ?>">
+						class="col-md-<?php echo $col['sk-grid']; ?><?php echo (int) isset($col['sk-grid-border']) && $col['sk-grid-border'] === 1 ? ' block-grid-border' : null; ?>">
 						<?php SK_Blocks::get_block( $col ); ?>
 					</div>
 				<?php endforeach; ?>
