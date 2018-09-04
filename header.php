@@ -13,18 +13,22 @@
 
 <?php get_template_part( 'partials/navbar', 'mobile' ); ?>
 <?php get_template_part( 'partials/mobile', 'search' ); ?>
-<?php $can_have_header_content = ( get_current_template() === 'page-start-advanced' || get_current_template() === 'page-navigation' ); ?>
+<?php $can_have_header_content = get_current_template() === 'page-start-advanced' || get_current_template() === 'page-navigation' ; ?>
 
 <?php $background_color = get_field( 'header_background_color' ) ? "background-image--" . get_field( 'header_background_color' ) : ''; ?>
 <?php $background_classes =  $background_color; ?>
 
 <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+
+<?php $pic = get_field('msva_page_bg_pic'); ?>
+
 <header class="site-header himlabadet-header">
 
-	<?php if ($can_have_header_content): ?>
-
+	<?php if (get_current_template() === 'page-start-advanced'): ?>
 		<div class="background-image <?php echo $background_classes; ?>" style="background-image:url(<?php echo get_stylesheet_directory_uri() . '/assets/images/kid.jpg' ?>)"> <div class="background-overlay"></div></div>
-
+	<?php elseif ($pic) : ?>
+		<div class="background-image <?php echo $background_classes; ?>" style="background-image:url(<?php echo $pic['url']; ?>)"> </div>
 	<?php endif; ?>
 
 
@@ -44,7 +48,7 @@
 	</div>
 
 
-	<?php if ( $can_have_header_content ): ?>
+	<?php if ( $can_have_header_content && !(get_current_template() === 'page-navigation' && !$pic)): ?>
 
 		<?php do_action( 'hb_header_content_start' ); ?>
 
