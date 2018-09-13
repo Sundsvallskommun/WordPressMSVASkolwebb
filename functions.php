@@ -340,3 +340,7 @@ function create_page_cat_tax() {
         )
     );
 }
+
+require_once STYLESHEETPATH . '/lib/iframe-shortcode/class-iframe-shortcode.php';
+$iframe_short_code = new \dragoncity\lib\iframe\shortcode\Iframe_Shortcode();
+$iframe_short_code->register_hooks();
