@@ -46,9 +46,16 @@
 							<?php else : ?>
 								<a href="<?php echo $is_shortcut ? $shortcut_url : $permalink; ?>"<?php echo $is_shortcut === 'external' ? 'target="_blank"' : ''; ?>>
 									<?php echo $title; ?>
+									<?php if($is_shortcut === 'external') : ?>
+										<span class="icon-external-wrapper">
+											<?php echo get_icon('external'); ?>
+										<span>
+									<?php endif; ?>
+									
 								</a>
 							<?php endif; ?>
 						</h2>
+						
 						<p class="nav-card-text">
 							<?php
 

@@ -56,3 +56,14 @@ body.search-results main {
   }
 }
 
+.icon-external-wrapper {
+  position: relative;
+  top: 3px;
+
+  svg {
+    fill: $msva-green;
+  }
+}
+
+
+
