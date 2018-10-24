@@ -104,8 +104,19 @@
 								}
 
 							} else {
-								$excerpt = sk_get_excerpt( $child_id );
-								echo $excerpt;
+								
+								$page_template = get_page_template_slug($child_id);
+								if(!empty($page_template)) {
+									$page_template = basename($page_template);
+									if($page_template == 'page-shortcut.php') {
+										echo '';
+									}
+								} else {
+									$excerpt = sk_get_excerpt($child_id);
+									echo $excerpt;
+								}
+								
+								
 							}
 							?>
 						</p>
