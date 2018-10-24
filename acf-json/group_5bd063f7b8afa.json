@@ -1,0 +1,43 @@
+{
+    "key": "group_5bd063f7b8afa",
+    "title": "Innehåll under navigationskort",
+    "fields": [
+        {
+            "key": "field_5bd06429d4ca4",
+            "label": "Innehåll under navigationskorten",
+            "name": "skolamsva_content_below_navigation_cards",
+            "type": "wysiwyg",
+            "instructions": "Ange eventuellt innehåll som skall synas under navigationskorten på sidan.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "sundsvalls_kommun",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/page-navigation.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1540385522
+}

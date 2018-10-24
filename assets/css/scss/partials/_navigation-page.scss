@@ -46,5 +46,9 @@
 	  font-size: font-size(7);
 	  color: #0a2036;
 	}
-  }
+	}
+	
+	&__below-cards {
+		padding-top: 0; 
+	}
 }

@@ -60,6 +60,23 @@ $template_theme_color_class = get_field( 'navtemplate_color' ) ? 'navigation-pag
 				<!-- /.card -->
 			</div>
 			<!-- /.col-sm-12 -->
+
+			<?php $extra_content = get_field('skolamsva_content_below_navigation_cards'); ?>
+			<?php if($extra_content) : ?>
+
+				<div class="col-xs-12">
+					<div class="card">
+						<div class="card-block navigation-page__below-cards">
+							<?php echo apply_filters('the_content', get_post_meta(get_the_ID(), 'skolamsva_content_below_navigation_cards', true)); ?>
+						</div>
+						<!-- /.card-block -->
+					</div>
+					<!-- /.card -->
+				</div>
+				<!-- /.col-sm-12 -->
+
+			<?php endif; ?>
+
 		</div>
 		<!-- /.row -->
 	</div>
