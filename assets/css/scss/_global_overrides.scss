@@ -63,6 +63,21 @@ body.search-results main {
   svg {
     fill: $msva-green;
   }
+
+}
+
+.school-tags-container {
+
+  a {
+    background: #e8e8ea;
+    display: inline-block;
+    padding: .55em 1.25em;
+    border-radius: .5em;
+    color: inherit;
+    margin-right: .25em;
+    margin-bottom: .5em;
+  }
+
 }
 
 

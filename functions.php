@@ -22,6 +22,9 @@ new Challenges_Short_code();
 require_once STYLESHEETPATH . '/lib/msva/page-bank-shortcode/class-page-bank-shortcode.php';
 new Page_Bank_ShortCode();
 
+require_once STYLESHEETPATH . '/lib/school-tags-shortcode/class-school-tags-shortcode.php';
+new School_Tags_Shortcode();
+
 
 
 
