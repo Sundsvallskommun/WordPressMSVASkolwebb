@@ -10,5 +10,5 @@
 	</div>
 
 	<?php get_template_part( 'partials/site-navigation', 'include' ); ?>
-    <span class="slogan">MittSverige Vatten & Avfalls pedagogiska verksamhet</span>
+	
 </div>
