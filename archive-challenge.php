@@ -13,7 +13,6 @@ get_header();
 
 					<li class="">
 						<a href="<?php echo get_permalink($post); ?>"><?php echo $post->post_title; ?></a>
-						<div class="excerpt"> Tre minuter förändrar allt </div>
 					</li>
 
 				<?php endwhile; endif; ?>
