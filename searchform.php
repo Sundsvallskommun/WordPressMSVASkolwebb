@@ -13,7 +13,7 @@ $parent_id = advanced_template_top_ancestor();
 
 	<div class="input-group">
 
-		<input type="text" value="<?php echo get_search_query(); ?>" class="form-control" placeholder="Sök" name="s" id="s" />
+		<input type="text" value="<?php echo get_search_query(); ?>" class="form-control" placeholder="Vad söker du efter?" name="s" id="s" />
 
 		<label class="sr-only" for="s"><?php _e( 'Sök', 'hb' ); ?></label>
 
