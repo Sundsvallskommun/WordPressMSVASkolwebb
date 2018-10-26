@@ -90,7 +90,17 @@ body.search-results main {
   input[type=text] {
     font-weight: normal !important;
   }
-  
+
+}
+
+.search-module__item__read-icon {
+  span {
+
+    .icon-svg {
+      fill: $msva-green !important;
+    }
+    
+  }
 }
 
 
