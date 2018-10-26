@@ -13,7 +13,7 @@ class Challenges_Short_code {
 	public function shortcode($settings) {
 
 		$args = array(
-			'posts_per_page'   => 7,
+			'posts_per_page'   => -1,
 			'orderby'          => 'date',
 			'order'            => 'DESC',
 			'post_type'        => 'challenge',
@@ -21,6 +21,10 @@ class Challenges_Short_code {
 		);
 
 		$challenges_posts = get_posts($args);
+		$number_of_challenges = count($challenges_posts);
+		if($number_of_challenges > 6) {
+			$challenges_posts = array_slice($challenges_posts, 0, 6);
+		}
 
 		$output = '';
 

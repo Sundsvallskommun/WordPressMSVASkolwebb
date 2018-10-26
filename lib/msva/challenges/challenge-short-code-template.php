@@ -7,14 +7,14 @@
 				<?php foreach ($challenges_posts as $challenge) : ?>
 					<li class="">
 						<a href="<?php echo get_permalink($challenge); ?>"><?php echo $challenge->post_title; ?></a>
-						<div class="excerpt"> Tre minuter förändrar allt </div>
 					</li>
 				<?php endforeach; ?>
 			</ul>
 		<?php endif; ?>
 		</div>
 
-
-		<a class="mt-5 show-all-btn" href="<?php echo get_post_type_archive_link('challenge'); ?>">Visa alla challenges</a>
+		<?php if($number_of_challenges > 6) : ?>			
+			<a class="mt-5 show-all-btn" href="<?php echo get_post_type_archive_link('challenge'); ?>">Visa alla challenges</a>
+		<?php endif; ?>
 	</div>
 </div>

@@ -14,10 +14,13 @@
       margin-bottom: 10px;
       line-height: 22px;
       margin-bottom: 20px;
+      min-height: 31px;
       a {
+        position: relative;
         font-weight: 900;
         font-size: 16px;
         color: $msva-green;
+        top: 3px;
         &:hover, &:focus {
           color: $msva-green;
         }
