@@ -11,13 +11,13 @@
         </div>
 
         <div class="modal-text mb-2">
-            <span class="h1-look-alike bold">bra jobbat!</span>
-            <p class="mt-1">Utmaningen är avklarad!<br>Så här många greencoins fick laget:</p>
+            <span id="headline" class="h1-look-alike bold headline"></span>
+            <p class="mt-1"><span id="level">Utmaningen är avklarad!</span><br>Så här många greencoins fick laget:</p>
             <hr class="line">
                 <img class="mr-1" width="103px" height="103px" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/coin.svg';?>" alt="coin"><span id="score" class="score"></span>
             <hr class="line">
 
-            <span class="bold">nivå:</span><span id="level" class="level bold uppercase">MILJÖHJÄLTAR</span>
+            <!--<span class="bold">nivå:</span><span id="level" class="level bold uppercase">MILJÖHJÄLTAR</span>-->
             <br>
         </div>
 
