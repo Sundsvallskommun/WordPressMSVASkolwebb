@@ -57,6 +57,8 @@
     }
 
     .two-col {
-      column-count: 2;
+      @include media-breakpoint-up(md) {
+        column-count: 2;
+      }
     }
 }

@@ -1,7 +1,7 @@
 <div class="card card--keep-padding full-height">
 	<div class="card-block pagebank">
 		<h5>nyttobank</h5>
-		<div class="two-col">
+		<div class="two-col col-sm-12">
 		<?php foreach ($grouped_pages as $group => $pages) : ?>
 			<div class="group">
 				<span class="title"><?php echo $group; ?></span>
